@@ -23,14 +23,14 @@ namespace API.Data.Repositories
       return await query.ToListAsync();
     }
 
-    public Task<Consumable> GetConsumableBySapIdAsync()
+    public async Task<Consumable> GetConsumableBySapIdAsync(int sapId)
     {
-      throw new System.NotImplementedException();
+      return await _context.Consumables.SingleOrDefaultAsync(x => x.SapId == sapId);
     }
 
-    public void CreateConsumableAsync(Consumable consumable)
+    public async Task CreateConsumableAsync(Consumable consumable)
     {
-      _context.Consumables.Add(consumable);
+      await _context.Consumables.AddAsync(consumable);
     }
   }
 }

@@ -17,10 +17,11 @@ namespace API.Data
     }
 
     public IConsumableRepository ConsumableRepository => new ConsumableRepository(_context, _mapper);
+    public IAreaOfWorkRepository AreaOfWorkRepository => new AreaOfWorkRepository(_context, _mapper);
 
     public async Task<bool> Complete()
     {
-      return await _context.SaveChangesAsync() > 1;
+      return await _context.SaveChangesAsync() > 0;
     }
 
     public bool HasChanges()

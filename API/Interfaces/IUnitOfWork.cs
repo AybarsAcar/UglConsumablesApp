@@ -9,6 +9,7 @@ namespace API.Interfaces
   public interface IUnitOfWork
   {
     IConsumableRepository ConsumableRepository { get; }
+    IAreaOfWorkRepository AreaOfWorkRepository { get; }
 
     /// <summary>
     /// to save all the changes to database

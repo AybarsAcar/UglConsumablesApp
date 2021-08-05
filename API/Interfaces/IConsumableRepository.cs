@@ -8,8 +8,8 @@ namespace API.Interfaces
   {
     public Task<List<Consumable>> GetConsumablesAsync();
 
-    public Task<Consumable> GetConsumableBySapIdAsync();
+    public Task<Consumable> GetConsumableBySapIdAsync(int sapId);
 
-    void CreateConsumableAsync(Consumable consumable);
+    Task CreateConsumableAsync(Consumable consumable);
   }
 }

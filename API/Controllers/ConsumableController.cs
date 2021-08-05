@@ -26,14 +26,13 @@ namespace API.Controllers
     [HttpPost]
     public async Task<IActionResult> CreateConsumable(Consumable consumable)
     {
-      _unit.ConsumableRepository.CreateConsumableAsync(consumable);
+      await _unit.ConsumableRepository.CreateConsumableAsync(consumable);
 
       if (await _unit.Complete())
       {
         return Ok();
       }
 
-      // TODO: currently we are sending BadRequest even though we add it to our db
       return BadRequest();
     }
 
@@ -41,6 +40,12 @@ namespace API.Controllers
     public async Task<List<Consumable>> GetConsumables()
     {
       return await _unit.ConsumableRepository.GetConsumablesAsync();
+    }
+
+    [HttpGet("{sapId}")]
+    public async Task<Consumable> GetConsumableBySapId(int sapId)
+    {
+      return await _unit.ConsumableRepository.GetConsumableBySapIdAsync(sapId);
     }
   }
 }
