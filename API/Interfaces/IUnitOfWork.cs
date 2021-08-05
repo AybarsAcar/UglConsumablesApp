@@ -10,6 +10,7 @@ namespace API.Interfaces
   {
     IConsumableRepository ConsumableRepository { get; }
     IAreaOfWorkRepository AreaOfWorkRepository { get; }
+    IUserRepository UserRepository { get; }
 
     /// <summary>
     /// to save all the changes to database
