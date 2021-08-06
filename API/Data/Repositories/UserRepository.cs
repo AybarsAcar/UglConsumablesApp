@@ -1,55 +1,52 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using API.DTOs.Account;
 using API.Entities;
 using API.Interfaces;
-using API.Services;
-using Microsoft.AspNetCore.Identity;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace API.Data.Repositories
 {
   public class UserRepository : IUserRepository
   {
-    private readonly UserManager<AppUser> _userManager;
-    private readonly SignInManager<AppUser> _signInManager;
-    private readonly TokenService _tokenService;
-    private readonly IConfiguration _configuration;
+    private readonly DataContext _context;
+    private readonly IMapper _mapper;
 
-    public UserRepository(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
-      TokenService tokenService, IConfiguration configuration)
+
+    public UserRepository(DataContext context, IMapper mapper)
     {
-      _userManager = userManager;
-      _signInManager = signInManager;
-      _tokenService = tokenService;
-      _configuration = configuration;
+      _context = context;
+      _mapper = mapper;
     }
 
-    public async Task<UserDto> Login(LoginDto loginDto)
+    public async Task<IEnumerable<AppUser>> GetUsersAsync()
     {
-      // TODO: finish implementing
-      var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Email == loginDto.Email);
-
-      if (user == null)
-      {
-      }
-
-      return new UserDto();
+      return await _context.Users.ToListAsync();
     }
 
-    public Task<UserDto> Register(RegisterDto registerDto)
+    public void Update(AppUser user)
     {
       throw new System.NotImplementedException();
     }
 
-    public Task<UserDto> GetCurrentUser()
+    public async Task<AppUser> GetUserByUsernameAsync(string username)
     {
-      throw new System.NotImplementedException();
+      return await _context.Users.FirstOrDefaultAsync(x => x.UserName == username);
     }
 
-    public Task<UserDto> RefreshToken()
+    public async Task<AppUser> GetUserByEmailAsync(string email)
     {
-      throw new System.NotImplementedException();
+      return await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+    }
+
+    public async Task<IEnumerable<AppUser>> GetUsersByDepartmentAsync(string department)
+    {
+      var query = _context.Users.AsQueryable();
+
+      query = query.Where(u => u.Department == department);
+
+      return await query.ToListAsync();
     }
   }
 }

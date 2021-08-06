@@ -1,25 +1,40 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using API.DTOs.Account;
+using API.Entities;
 
 namespace API.Interfaces
 {
   public interface IUserRepository
   {
-    public Task<UserDto> Login(LoginDto loginDto);
-
-    public Task<UserDto> Register(RegisterDto registerDto);
-
     /// <summary>
-    /// returns the user from teh token
+    /// returns all the users
     /// </summary>
     /// <returns></returns>
-    public Task<UserDto> GetCurrentUser();
+    public Task<IEnumerable<AppUser>> GetUsersAsync();
 
     /// <summary>
-    /// refreshes the user token if logged in
-    /// and returns their account
+    /// updates user details i.e department
+    /// </summary>
+    /// <param name="user"></param>
+    public void Update(AppUser user);
+
+    /// <summary>
+    /// finds and returns the user with their username
     /// </summary>
     /// <returns></returns>
-    public Task<UserDto> RefreshToken();
+    public Task<AppUser> GetUserByUsernameAsync(string username);
+    
+    /// <summary>
+    /// finds and returns the user with their email
+    /// </summary>
+    /// <returns></returns>
+    public Task<AppUser> GetUserByEmailAsync(string email);
+
+    /// <summary>
+    /// returns all the users in a given department
+    /// </summary>
+    /// <param name="department"></param>
+    /// <returns></returns>
+    public Task<IEnumerable<AppUser>> GetUsersByDepartmentAsync(string department);
   }
 }
