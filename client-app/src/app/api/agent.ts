@@ -6,6 +6,12 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { Consumable, ConsumableFormValues } from '../models/consumable';
+import {
+  AccountLoginValues,
+  AccountRegisterValues,
+  User,
+} from '../models/user';
+import { store } from '../stores/store';
 
 // add delay to the request to test loading behaviour
 const sleep = (delay: number) => {
@@ -18,15 +24,15 @@ const sleep = (delay: number) => {
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
 // interceptor to send our token with requests
-// axios.interceptors.request.use((config) =>{
-//   const token = store.commonStore.token;
+axios.interceptors.request.use((config) => {
+  const token = store.commonStore.token;
 
-//   if (token) {
-//     config.headers.Authorization = `Bearer ${token}`;
-//   }
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
 
-//   return config;
-// })
+  return config;
+});
 
 // set the axios interceptors
 // delay all requests to the Server by 1 second
@@ -130,6 +136,14 @@ const AreaOfWorkRequests = {
     ),
 };
 
-const agent = { ConsumableRequests, AreaOfWorkRequests };
+const AccountRequests = {
+  current: () => requests.get<User>('/account'),
+  register: (user: AccountRegisterValues) =>
+    requests.post<User>('/account/register', user),
+  login: (user: AccountLoginValues) =>
+    requests.post<User>('/account/login', user),
+};
+
+const agent = { ConsumableRequests, AreaOfWorkRequests, AccountRequests };
 
 export default agent;

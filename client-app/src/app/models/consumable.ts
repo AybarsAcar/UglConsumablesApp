@@ -4,6 +4,8 @@ export interface Consumable {
   description: string;
   unitOfMeasue: string;
   isSite: boolean;
+
+  orderQuantity?: number;
 }
 
 export interface ConsumableFormValues {

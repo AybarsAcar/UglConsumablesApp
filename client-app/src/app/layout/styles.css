@@ -1,0 +1,56 @@
+body {
+  background-color: #ffff !important;
+}
+
+.ui.inverted.top.fixed.menu {
+  background-image: linear-gradient(
+    135deg,
+    #001e6c 0%,
+    #035397 29%,
+    #5089c6 49%,
+    #ffff 90%
+  ) !important;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* Home Page Styles */
+
+.masthead {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    #001e6c 0%,
+    #035397 29%,
+    #5089c6 49%,
+    #ffff 90%
+  ) !important;
+
+  height: 100vh;
+}
+
+.masthead .uni.menu .ui.butoon,
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.masthead h2 {
+  font-size: 1.7 em;
+  font-weight: normal;
+}
+
+/* Home Page Styles Ends */
