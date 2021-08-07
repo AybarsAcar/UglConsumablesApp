@@ -8,9 +8,18 @@ export interface Consumable {
   orderQuantity?: number;
 }
 
-export interface ConsumableFormValues {
-  sapId: number;
-  description: string;
-  unitOfMeasue: string;
-  isSite: boolean;
+export class ConsumableFormValues {
+  sapId: number | undefined = undefined;
+  description: string = '';
+  unitOfMeasue: string = '';
+  isSite: boolean = false;
+
+  constructor(consumable?: ConsumableFormValues) {
+    if (consumable) {
+      this.sapId = consumable.sapId;
+      this.description = consumable.description;
+      this.unitOfMeasue = consumable.unitOfMeasue;
+      this.isSite = consumable.isSite;
+    }
+  }
 }

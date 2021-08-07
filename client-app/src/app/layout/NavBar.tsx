@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite';
-import { NavLink } from 'react-router-dom';
-import { Button, Container, Menu } from 'semantic-ui-react';
+import { Link, NavLink } from 'react-router-dom';
+import { Container, Dropdown, Menu } from 'semantic-ui-react';
 import { useStore } from '../stores/store';
 
 function NavBar() {
@@ -24,13 +24,43 @@ function NavBar() {
             />
             <Menu.Item as={NavLink} exact to="/errors" name="Errors" />
             <Menu.Item>
-              <Button
-                as={NavLink}
-                exact
-                to="/createActivity"
-                positive
-                content="Create Activity"
-              />
+              <Dropdown pointing="top left" text="Create">
+                <Dropdown.Menu>
+                  <Dropdown.Item
+                    as={Link}
+                    to={`/create/areaOfWork`}
+                    text="Create an Area of Work"
+                    icon="industry"
+                  />
+
+                  <Dropdown.Item
+                    as={Link}
+                    to={`/edit/areaOfWork`}
+                    text="Edit an Area of Work"
+                    icon="industry"
+                  />
+
+                  <Dropdown.Item
+                    as={Link}
+                    to={`/create/consumable`}
+                    text="Create a Consumable"
+                    icon="dolly"
+                  />
+
+                  <Dropdown.Item
+                    as={Link}
+                    to={`/edit/consumable`}
+                    text="Edit a Consumable"
+                    icon="dolly"
+                  />
+
+                  <Dropdown.Item
+                    onClick={accountStore.logout}
+                    text="Logout"
+                    icon="power"
+                  />
+                </Dropdown.Menu>
+              </Dropdown>
             </Menu.Item>
           </>
         )}

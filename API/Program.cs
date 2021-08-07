@@ -14,17 +14,23 @@ namespace API
 {
   public class Program
   {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
       var host = CreateHostBuilder(args).Build();
 
       using (var scope = host.Services.CreateScope())
       {
         var services = scope.ServiceProvider;
+        var loggerFactory = services.GetService<ILoggerFactory>();
+
         try
         {
           var context = services.GetRequiredService<DataContext>();
-          context.Database.Migrate();
+          await context.Database.MigrateAsync();
+
+          // TODO: update the seed data - it is noisy
+          // seed data
+          // await Seed.SeedAsync(context, loggerFactory);
         }
         catch (Exception e)
         {
@@ -33,7 +39,7 @@ namespace API
         }
       }
 
-      host.Run();
+      await host.RunAsync();
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>

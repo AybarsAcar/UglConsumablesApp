@@ -1,61 +1,37 @@
 import { observer } from 'mobx-react-lite';
+import { useEffect } from 'react';
 import { Container, Item } from 'semantic-ui-react';
 import { useStore } from '../../app/stores/store';
 
 function AreaOfWorkSelection() {
-  const { tabStore } = useStore();
+  const { tabStore, areaOfWorkStore } = useStore();
+
+  useEffect(() => {
+    if (areaOfWorkStore.areaOfWorks.length <= 0) {
+      areaOfWorkStore.loadAreaOfWorks();
+    }
+  }, [areaOfWorkStore]);
 
   if (tabStore.activeTabIndex !== 1) return <></>;
 
   return (
     <Container>
       <Item.Group>
-        <Item>
-          <Item.Content verticalAlign="middle">
-            <Item.Header
-              as="a"
-              onClick={() => {
-                tabStore.setActiveTab(2);
-              }}
-              content="Car Shop 2 Vehicle Builders"
-            />
-          </Item.Content>
-        </Item>
-
-        <Item>
-          <Item.Content verticalAlign="middle">
-            <Item.Header
-              as="a"
-              onClick={() => {
-                tabStore.setActiveTab(2);
-              }}
-              content="Car Shop 2 Mechanicals"
-            />
-          </Item.Content>
-        </Item>
-
-        <Item>
-          <Item.Content verticalAlign="middle">
-            <Item.Header
-              as="a"
-              onClick={() => {
-                tabStore.setActiveTab(2);
-              }}
-              content="Car Shop 1 Fabrication"
-            />
-          </Item.Content>
-        </Item>
-        <Item>
-          <Item.Content verticalAlign="middle">
-            <Item.Header
-              as="a"
-              onClick={() => {
-                tabStore.setActiveTab(2);
-              }}
-              content="Bogie Overhaul"
-            />
-          </Item.Content>
-        </Item>
+        {!areaOfWorkStore.isLoadingInitial &&
+          areaOfWorkStore.areaOfWorks.map((areaOfWork) => (
+            <Item key={areaOfWork.id}>
+              <Item.Content verticalAlign="middle">
+                <Item.Header
+                  as="a"
+                  onClick={() => {
+                    areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
+                    tabStore.setActiveTab(2);
+                  }}
+                  content={areaOfWork.description}
+                />
+              </Item.Content>
+            </Item>
+          ))}
       </Item.Group>
     </Container>
   );

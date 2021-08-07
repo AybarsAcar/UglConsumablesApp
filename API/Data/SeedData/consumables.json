@@ -1,0 +1,3803 @@
+[
+  {
+    "Id": 1,
+    "SapId": "1000375885",
+    "Description": " GLOVE CLIP, GLOVE GUARD, ORANGE 100-311",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 2,
+    "SapId": "1000198281",
+    "Description": ".125mm X 20mm GLASS B WEAVE TAPE",
+    "UnitOfMeasure": "M",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 3,
+    "SapId": "1000198284",
+    "Description": ".175mm X 25mm GLASS B WEAVE TAPE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 4,
+    "SapId": "1000199250",
+    "Description": ".8MM DIAMOND CUTTING WHEEL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 5,
+    "SapId": "1000199143",
+    "Description": "0.75mm 155 RADOX CABLE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 6,
+    "SapId": "1000199783",
+    "Description": "0.9MM S/STEEL O/HAUL LABEL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 7,
+    "SapId": "1000199144",
+    "Description": "1.5mm 155 RADOX  CABLE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 8,
+    "SapId": "1000199058",
+    "Description": "1.5MM INSER.RUBBER 0524 7907",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 9,
+    "SapId": "1000199643",
+    "Description": "1/2 UNC Z/P NUTS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 10,
+    "SapId": "1000199609",
+    "Description": "1/2 ZP F/WASHER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 11,
+    "SapId": "1000199616",
+    "Description": "1/2 ZP MD S/WASHER",
+    "UnitOfMeasure": "ea",
+    "IsSite": "product"
+  },
+  {
+    "Id": 12,
+    "SapId": "1000199269",
+    "Description": "1/8 X 1\" BSP EXTENSION 0032-4455",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 13,
+    "SapId": "1000199271",
+    "Description": "1/8 X 2\" BSP EXTENSION 0091-0877",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 14,
+    "SapId": "1000199753",
+    "Description": "10 X 10 GRUB SCREWS 0196 8507",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 15,
+    "SapId": "1000198369",
+    "Description": "100MM ALU  GRINDING WHEEL 0873 0615",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 16,
+    "SapId": "1000226913",
+    "Description": "100MM CUTTING WHEEL 0022 6402 - USE 1000226913",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 17,
+    "SapId": "1000199775",
+    "Description": "106MM X 53MM DANGER ISOLATE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 18,
+    "SapId": "1000199225",
+    "Description": "1080 RTV SILASTIC 310G BLACK 0081-1036",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 19,
+    "SapId": "1000199231",
+    "Description": "1080 SILASTIC 310G 0069 2358",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 20,
+    "SapId": "1000198441",
+    "Description": "10G JACK CHAIN 0405 3008-30MTR 0405-3008",
+    "UnitOfMeasure": "M",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 21,
+    "SapId": "1000198545",
+    "Description": "12-20 HOSE CLAMP 0415 9805",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 22,
+    "SapId": "1000457172",
+    "Description": "12MM MASKING TAPE GREEN",
+    "UnitOfMeasure": "M",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 23,
+    "SapId": "1000198317",
+    "Description": "12MM THREAD TAPE 10M 0265 3352",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 24,
+    "SapId": "1000198546",
+    "Description": "16-25 HOSE CLAMP 0415 9902",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 25,
+    "SapId": "1000199149",
+    "Description": "16mm 155 RADOX CABLE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 26,
+    "SapId": "1000199437",
+    "Description": "17MM X 5.5MM X .48 NMN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 27,
+    "SapId": "1000199325",
+    "Description": "182ZPK AMERCOAT CATALYST 0.8LT - OBSOLETE ITEM",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 28,
+    "SapId": "1000199324",
+    "Description": "182ZPK AMERCOAT LT GREY 3.2LTR",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 29,
+    "SapId": "1000198333",
+    "Description": "18K23 18MM KAPTON TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 30,
+    "SapId": "1000198638",
+    "Description": "18TPI HACKSAW BLADE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 31,
+    "SapId": "1000198355",
+    "Description": "19MM SUPER STEEL STRAPPING 0058-0839",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 32,
+    "SapId": "1000376177",
+    "Description": "2.5MM SILVER BRAZING RODS 0808-5205 - $266.00 per kg - Supplied in 2kg wrap",
+    "UnitOfMeasure": "KG",
+    "IsSite": "product"
+  },
+  {
+    "Id": 33,
+    "SapId": "1000198434",
+    "Description": "21200 REFLECTIVE TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 34,
+    "SapId": "1000414557",
+    "Description": "215 RUSTFIGHTER GREY 20L DRUM",
+    "UnitOfMeasure": "L",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 35,
+    "SapId": "1000199367",
+    "Description": "215 RUSTFIGHTER GREY 4 LTR CAN",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 36,
+    "SapId": "1000199368",
+    "Description": "215 RUSTFIGHTER RED 4 LTR CAN",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 37,
+    "SapId": "1000414556",
+    "Description": "215 RUSTFIGHTER WHITE 20L DRUM",
+    "UnitOfMeasure": "L",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 38,
+    "SapId": "1000198312",
+    "Description": "2308 25MM MASK.TAPE 0330 8683",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 39,
+    "SapId": "1000198313",
+    "Description": "2308 48MM MASK/TAPE 0330 8717",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 40,
+    "SapId": "1000198639",
+    "Description": "24TPI HACKSAW BLADE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 41,
+    "SapId": "1000198547",
+    "Description": "25-40 HOSE CLAMP 0416 0001",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 42,
+    "SapId": "1000198304",
+    "Description": "25MICAMAT 25MM MICA TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 43,
+    "SapId": "1000198415",
+    "Description": "25MM E/R BAND COARSE 0039 8408",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 44,
+    "SapId": "1000198413",
+    "Description": "25MM EVEN RUN BANDS FINE 0039-9805",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 45,
+    "SapId": "1000198414",
+    "Description": "25MM EVEN RUN BANDS MEDIUM 0039-9203",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 46,
+    "SapId": "1000199239",
+    "Description": "263 THREADLOCKER,LOCTITE 0979-4200",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 47,
+    "SapId": "1000198959",
+    "Description": "2MM O RING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 48,
+    "SapId": "1000198674",
+    "Description": "3 IN ONE OIL 88ML 0396 9805",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 49,
+    "SapId": "1000198637",
+    "Description": "3.2 X 25 SPLIT PINS 0153 2001",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 50,
+    "SapId": "1000199071",
+    "Description": "3.290 3.2MM V/F90 TYING CORD",
+    "UnitOfMeasure": "Roll",
+    "IsSite": "product"
+  },
+  {
+    "Id": 51,
+    "SapId": "1000198960",
+    "Description": "3.53MM O RING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 52,
+    "SapId": "1000199642",
+    "Description": "3/8 UNC Z/P NUTS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 53,
+    "SapId": "1000199607",
+    "Description": "3/8 ZP F/WASHER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 54,
+    "SapId": "1000199619",
+    "Description": "3/8 ZP SQUARE SECTION S/WASHER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 55,
+    "SapId": "1000199329",
+    "Description": "300 THINNERS 20 LTR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 56,
+    "SapId": "1000198336",
+    "Description": "3011 50mm MYLAR HEATSHRINK TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 57,
+    "SapId": "1000199322",
+    "Description": "302A MULTI ETCH YELLOW 4 LTR",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 58,
+    "SapId": "1000199323",
+    "Description": "302B MULTI ETCH HARDENER 4 LTR",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 59,
+    "SapId": "1000199330",
+    "Description": "304 THINNERS 20 LTR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 60,
+    "SapId": "1000198703",
+    "Description": "324A EPIREZ KIT 2PK 0447 7309",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 61,
+    "SapId": "1000198340",
+    "Description": "3285 PERMAFIL PUTTY 1 QRT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 62,
+    "SapId": "1000198640",
+    "Description": "32TPI HACKSAW BLADE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 63,
+    "SapId": "1000198311",
+    "Description": "3701 48MM PACK.TAPE 0159 9953",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 64,
+    "SapId": "1000199366",
+    "Description": "37104914-4L DULUX METALSHIELD GE GREEN",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 65,
+    "SapId": "1000198550",
+    "Description": "3M ROLOC DISCS 0231 1917",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 66,
+    "SapId": "1000198982",
+    "Description": "3MM 942 VIDAFLEX SLEEVING",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 67,
+    "SapId": "1000199059",
+    "Description": "3MM INSER.RUBBER 0506 0906",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 68,
+    "SapId": "1000198418",
+    "Description": "40MM EVEN RUN BANDS COARSE 0040-2006",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 69,
+    "SapId": "1000198416",
+    "Description": "40MM EVEN RUN BANDS FINE 0040-3209",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 70,
+    "SapId": "1000198417",
+    "Description": "40MM EVEN RUN BANDS MEDIUM 0040-2608",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 71,
+    "SapId": "1000199336",
+    "Description": "445 REDUCER 20 LTR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 72,
+    "SapId": "1000198345",
+    "Description": "4704-24 UNISIL TAPE 3MM X 24MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 73,
+    "SapId": "1000198346",
+    "Description": "4708-24 UNISIL TAPE 6MM X 24MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 74,
+    "SapId": "1000198347",
+    "Description": "4708-35 UNISIL TAPE 6MM X 35MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 75,
+    "SapId": "1000199267",
+    "Description": "47200-B 1/8 BSP RELIEF VALVES 0444-6806",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 76,
+    "SapId": "1000198315",
+    "Description": "48MM DUCT TAPE BLACK 0507 0856",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 77,
+    "SapId": "1000198314",
+    "Description": "48MM DUCT TAPE GREY 0048 7209",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 78,
+    "SapId": "1000198310",
+    "Description": "48MM GAFFER TAPE 0056 1578",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 79,
+    "SapId": "1000199756",
+    "Description": "4G X 1/4 304 DRIVE SCREWS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 80,
+    "SapId": "1000199755",
+    "Description": "4G X 3/16 304 DRIVE SCREWS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 81,
+    "SapId": "1000199757",
+    "Description": "4G X 5/16 Z/P YELLOW U DRIVE SCREWS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 82,
+    "SapId": "1000198961",
+    "Description": "4MM O RING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 83,
+    "SapId": "1000198673",
+    "Description": "5 MINUTE ARALDITE 200ML 0447-1402",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 84,
+    "SapId": "1000473891",
+    "Description": "5 PIECE CUTTING AND SAWING SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 85,
+    "SapId": "1000199304",
+    "Description": "5 X 2 X 1 CLEAN STONES / SOFT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 86,
+    "SapId": "1000199300",
+    "Description": "5 X 2 X 1 RUBBERBOND STONE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 87,
+    "SapId": "1000198658",
+    "Description": "5 X 3 X 2 SAW HANDLE FINE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 88,
+    "SapId": "1000198892",
+    "Description": "5/16 UNC HELICOIL KIT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 89,
+    "SapId": "1000199608",
+    "Description": "5/16 ZP F/WASHER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 90,
+    "SapId": "1000199615",
+    "Description": "5/16 ZP MD S/WASHER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 91,
+    "SapId": "1000198421",
+    "Description": "50MM EVEN RUN BAND COARSE 0040-3500",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 92,
+    "SapId": "1000198420",
+    "Description": "50MM EVEN RUN BAND MEDIUM 0040-4305",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 93,
+    "SapId": "1000198419",
+    "Description": "50MM EVEN RUN BANDS FINE 0079-9007",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 94,
+    "SapId": "1000198549",
+    "Description": "52-70 HOSE CLAMP 0416 0205",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 95,
+    "SapId": "1000199326",
+    "Description": "531 ETCH PRIMER GREY 4 LTR",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 96,
+    "SapId": "1000199545",
+    "Description": "5540008 VCGT 160408-AS IC20 TURNING TIPS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 97,
+    "SapId": "1000198646",
+    "Description": "563/1 S/SCREW CONNECTOR 100PK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 98,
+    "SapId": "1000198647",
+    "Description": "563/2 D/SCREW CONNECTORS 50PK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 99,
+    "SapId": "1000198648",
+    "Description": "593/15 15AMP TERM/STRIP 20PK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 100,
+    "SapId": "1000198984",
+    "Description": "5MM 942 VIDAFLEX SLEEVING",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 101,
+    "SapId": "1000198963",
+    "Description": "5MM O RING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 102,
+    "SapId": "1000199167",
+    "Description": "60/40 SOLDER 1.6MM 0446 2806",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 103,
+    "SapId": "1000199353",
+    "Description": "642 ISONEL CLEAR SPRAY 300G",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 104,
+    "SapId": "1000198964",
+    "Description": "6MM O RING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 105,
+    "SapId": "1000199369",
+    "Description": "707A VARNISH-707B ORG PEROXIDE",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 106,
+    "SapId": "1000199232",
+    "Description": "732B BLACK SILISTIC 0445 5004",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 107,
+    "SapId": "1000199230",
+    "Description": "732C RTV CLEAR SILASTIC 310G 0432-8005",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 108,
+    "SapId": "1000199327",
+    "Description": "737 THINNERS 20 LTR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 109,
+    "SapId": "1000199781",
+    "Description": "75 x 20 S/STEEL APPROVAL LABEL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 110,
+    "SapId": "1000198677",
+    "Description": "808 SILICON SPRAY 500ML 0484-3063",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 111,
+    "SapId": "1000198341",
+    "Description": "813-U76841-06 1/4 X 1000' UNDERLAY TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 112,
+    "SapId": "1000198337",
+    "Description": "816-TY0638 6mm TYING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 113,
+    "SapId": "1000198339",
+    "Description": "816-TY1033 10mm TYING CORD",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 114,
+    "SapId": "1000198702",
+    "Description": "8242 EPIREZ KIT 2PK 0074 4357",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 115,
+    "SapId": "1000198544",
+    "Description": "9-12 HOSE CLAMP 0438 5705",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 116,
+    "SapId": "1000199362",
+    "Description": "977B HARDENER 1 LTR",
+    "UnitOfMeasure": "L",
+    "IsSite": "product"
+  },
+  {
+    "Id": 117,
+    "SapId": "1000198754",
+    "Description": "A100 15/64 HSS SS DRILL 0568-6209",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 118,
+    "SapId": "1000198775",
+    "Description": "A100 2.5MM HSS SS DRILL 0570-5504",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 119,
+    "SapId": "1000198744",
+    "Description": "A100 5/64 HSS SS DRILL 0568-5200",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 120,
+    "SapId": "1000198712",
+    "Description": "A120 FLAP WHEEL 63MM 0474 4866",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 121,
+    "SapId": "1000457103",
+    "Description": "ABRASIVE BURR, 30G,19MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 122,
+    "SapId": "1000457204",
+    "Description": "ABRASIVE BURR, 30G,32MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 123,
+    "SapId": "1000198394",
+    "Description": "ABRASIVE ROLL 320G 0025 2609",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 124,
+    "SapId": "1000198392",
+    "Description": "ABRASIVE ROLL 60G 0025 1901",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 125,
+    "SapId": "1000198393",
+    "Description": "ABRASIVE ROLL 80G 0025 2007",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 126,
+    "SapId": "1000485446",
+    "Description": "ABRASIVE,PRECUT,SOFT HAND ROLLS,180G",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 127,
+    "SapId": "1000485447",
+    "Description": "ABRASIVE,PRECUT,SOFT HAND ROLLS,240G",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 128,
+    "SapId": "1000342284",
+    "Description": "ACETONE,TECH,020,20L",
+    "UnitOfMeasure": "L",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 129,
+    "SapId": "1000198291",
+    "Description": "ADHESIVE GLASS AUSTAPE 12MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 130,
+    "SapId": "1000198292",
+    "Description": "ADHESIVE GLASS AUSTAPE 18MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 131,
+    "SapId": "1000453562",
+    "Description": "ADHESIVE,510,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 132,
+    "SapId": "1000216879",
+    "Description": "ADHESIVE,AEROSOL,HS,471GM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 133,
+    "SapId": "1000496223",
+    "Description": "ADHESIVE,CONTACT GEL,KWIK GRIP,400G",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 134,
+    "SapId": "1000227473",
+    "Description": "ADHESIVE,LOCTITE 222,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 135,
+    "SapId": "1000227078",
+    "Description": "ADHESIVE,LOCTITE 243,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 136,
+    "SapId": "1000250236",
+    "Description": "ADHESIVE,LOCTITE 262,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 137,
+    "SapId": "1000419518",
+    "Description": "ADHESIVE,LOCTITE 263,50ML BOTTLE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 138,
+    "SapId": "1000290375",
+    "Description": "ADHESIVE,LOCTITE 271,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 139,
+    "SapId": "1000201545",
+    "Description": "ADHESIVE,LOCTITE 406,25ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 140,
+    "SapId": "1000199243",
+    "Description": "ADHESIVE,LOCTITE 680,50ML 0133-6511",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 141,
+    "SapId": "1000460219",
+    "Description": "ADHESIVE,LOCTITE H8000,490ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 142,
+    "SapId": "1000470437",
+    "Description": "ADHESIVE,LOCTITE H8000,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 143,
+    "SapId": "1000460461",
+    "Description": "ADHESIVE,LOCTITE MS939,570ML,BLACK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 144,
+    "SapId": "1000198669",
+    "Description": "ADHESIVE,LOCTITE,500G 0602-4892",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 145,
+    "SapId": "1000419525",
+    "Description": "ADHESIVE,LOCTITE,680,VERY HlGH STRENGTH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 146,
+    "SapId": "1000478871",
+    "Description": "ADHESIVE,LOCTITE,THREADLOCKER 263,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 147,
+    "SapId": "1000453392",
+    "Description": "ADHESIVE,SEALANT,HEAT RESISTANT,RTV 736",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 148,
+    "SapId": "1000365476",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 515,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 149,
+    "SapId": "1000199226",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 567 0131-4818",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 150,
+    "SapId": "1000227070",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 567,250ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 151,
+    "SapId": "1000233361",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 567,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 152,
+    "SapId": "1000227515",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 577,250ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 153,
+    "SapId": "1000428599",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 577,50ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 154,
+    "SapId": "1000199242",
+    "Description": "ADHESIVE,SEALANT,LOCTITE 587",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 155,
+    "SapId": "1000199376",
+    "Description": "AEROGUARD SPRAY 150 GRM 0746-7110",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 156,
+    "SapId": "1000418702",
+    "Description": "Alcohol  Isopropyl",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 157,
+    "SapId": "1000451441",
+    "Description": "ANTI-CORROSION,HEAVY WET FILM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 158,
+    "SapId": "1000226832",
+    "Description": "ANTISEIZE COMP,LUBE,CU,225GM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 159,
+    "SapId": "1000257746",
+    "Description": "ANTISPATTER COMP,WELD,NOZZLE DIP",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 160,
+    "SapId": "1000297071",
+    "Description": "APPLICATOR,PRIMER,SGLE USE,SIKA SPP-WAD",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 161,
+    "SapId": "1000258061",
+    "Description": "APRON,UTILITY,900X1200MM,PVC,SOLVENT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 162,
+    "SapId": "1000226587",
+    "Description": "APRON,WELDERS,LEATHER,LARGE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 163,
+    "SapId": "1000198349",
+    "Description": "ARLON25 25MM SILICONE TAPE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 164,
+    "SapId": "1000199233",
+    "Description": "ATF BW250 FLAMEPATH GREASE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 165,
+    "SapId": "1000478161",
+    "Description": "B/E FACE SHIELDS 0127 3545 - 1000199535 replaced by 1000236591 replaced by 1000478161",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 166,
+    "SapId": "1000478161",
+    "Description": "B/E FACE SHIELDS 0127 3545 - 1000199535 replaced by 1000236591 replaced by 1000478161",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 167,
+    "SapId": "1000461920",
+    "Description": "BACKING BAR,CERAMIC,13MM",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 168,
+    "SapId": "1000461952",
+    "Description": "BACKING BAR,CERAMIC,9MM (USE 1000501790 instead)",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 169,
+    "SapId": "1000461955",
+    "Description": "BACKING TILE,CERAMIC,1IN FLAT,1X1X1/4 IN",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 170,
+    "SapId": "1000199389",
+    "Description": "BANNISTER BRUSH 0423 2201",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 171,
+    "SapId": "1000341815",
+    "Description": "BATTERY COIN CR2032 3V",
+    "UnitOfMeasure": "ea",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 172,
+    "SapId": "1000478312",
+    "Description": "BATTERY,COIN CELL,3V,2450,LITHIUM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 173,
+    "SapId": "1000483823",
+    "Description": "BATTERY,COIN,1.5 ALKALINE,ENERGIZER",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 174,
+    "SapId": "1000237443",
+    "Description": "BATTERY,NONRCHG,ALK,1.5V,SIZE AAA",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 175,
+    "SapId": "1000242782",
+    "Description": "BEARING BLUE,25G",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 176,
+    "SapId": "1000440385",
+    "Description": "BEARING,CYLINDRICAL ROLLER,NU324.C3",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 177,
+    "SapId": "1000440292",
+    "Description": "BEARING,SINGLE ROW BALL,6316.C3",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 178,
+    "SapId": "1000440295",
+    "Description": "BEARING,SINGLE ROW BALL,6318.2ZR.C3",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 179,
+    "SapId": "1000440299",
+    "Description": "BEARING,SINGLE ROW BALL,6319.C3",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 180,
+    "SapId": "1000440305",
+    "Description": "BEARING,SINGLE ROW BALL,6324.C3",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 181,
+    "SapId": "1000198609",
+    "Description": "BF1-040P 1/4\" BSPP FEM STR 1/4\" HOSE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 182,
+    "SapId": "1000199516",
+    "Description": "BIG RED WELD.GLOVES 0485 9565",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 183,
+    "SapId": "1000262618",
+    "Description": "BLACK EAGLE VISORS 0127 3596 - USE 1000262618 NOT 1000199536",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 184,
+    "SapId": "1000227122",
+    "Description": "BLADE,ABRASIVE,CUT OFF,22X125X2.5MM,FH38",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 185,
+    "SapId": "1000298082",
+    "Description": "BLADE,ABRASIVE,CUT OFF,MTL,22X125X1MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 186,
+    "SapId": "1000495394",
+    "Description": "BLADE,BAND SAW,3810X27X0.9MM,4-6TPI",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 187,
+    "SapId": "1000452002",
+    "Description": "BLADE,BANDSAW,2455X27MM,6-10 TPI",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 188,
+    "SapId": "1000452006",
+    "Description": "BLADE,COLD SAW,250X2X32",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 189,
+    "SapId": "1000490765",
+    "Description": "BLADE,JIGSAW,WOOD,MAKITA,PACK OF 5",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 190,
+    "SapId": "1000199253",
+    "Description": "BLADE,UNDERCUTTING,18TC,0.023IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 191,
+    "SapId": "1000199277",
+    "Description": "BLADE,UNDERCUTTING,54TC,0.032IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 192,
+    "SapId": "1000199252",
+    "Description": "BLADE,UNDERCUTTING,75TC,0.032IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 193,
+    "SapId": "1000199265",
+    "Description": "BLADE,UNDERCUTTING,75TC,0.062IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 194,
+    "SapId": "1000199266",
+    "Description": "BLADE,UNDERCUTTING,75TC,0.065IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 195,
+    "SapId": "1000198440",
+    "Description": "BLADE,UNDERCUTTING,85HSS .045\"",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 196,
+    "SapId": "1000452163",
+    "Description": "BLADES CUTTER,H/DUTY,18X0.5MM - NOT 1000198398",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 197,
+    "SapId": "1000290534",
+    "Description": "BLOCK,ABRASIVE,MED COARSE,SUPASAND",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 198,
+    "SapId": "1000460117",
+    "Description": "BLOWGUN, AIR,SAFE AND AMP,QUIET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 199,
+    "SapId": "1000205238",
+    "Description": "BOLT,CAMCAR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 200,
+    "SapId": "1000201440",
+    "Description": "BOLT,HEX HD,1.25,6IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 201,
+    "SapId": "1000485285",
+    "Description": "BOLT,HEX HD,1/2 UNC X 1 3/4,GR8,Z/Y",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 202,
+    "SapId": "1000469478",
+    "Description": "BOLT,HEX HD,1/2 UNC X 2 1/2,Y/ZINC,GR 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 203,
+    "SapId": "1000469477",
+    "Description": "BOLT,HEX HD,1/2 UNC X 3,Y/ZINC,GR 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 204,
+    "SapId": "1000449656",
+    "Description": "BOLT,HEX HD,1/2 UNC X 4-1/2,GR8,Z/P",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 205,
+    "SapId": "1000355313",
+    "Description": "BOLT,HEX HD,3/4X2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 206,
+    "SapId": "1000469486",
+    "Description": "BOLT,HEX HD,3/8 UNC X 2 IN,Y/ZINC,GR 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 207,
+    "SapId": "1000448937",
+    "Description": "BOLT,HEX HD,3/8 UNC X 3/4,GR8,Z/Y",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 208,
+    "SapId": "1000469487",
+    "Description": "BOLT,HEX HD,3/8 UNCX2 1/2 IN,Y/ZINC,GR 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 209,
+    "SapId": "1000469464",
+    "Description": "BOLT,HEX HD,3/8 UNCX2 1/4 IN,Y/ZINC,GR 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 210,
+    "SapId": "1000227513",
+    "Description": "BOLT,HEX HD,M10X25MM LG,ZN PLT,8.8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 211,
+    "SapId": "1000226175",
+    "Description": "BOLT,HEX HD,M10X75MM LG,ZN PLT,8.8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 212,
+    "SapId": "1000290455",
+    "Description": "BOLT,HEX HD,M12X100MM LG,ZN PLT,8.8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 213,
+    "SapId": "1000201487",
+    "Description": "BOLT,HEX HD,M12X55MM LG,ZN PLT,8.8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 214,
+    "SapId": "1000451786",
+    "Description": "BOLT,HEX HEAD,UNC,1/4X3/4,ZINC PLATED",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 215,
+    "SapId": "1000226481",
+    "Description": "BOLT,U,M10X32MM LG,GALV,MS,NB,W/-NUT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 216,
+    "SapId": "1000337960",
+    "Description": "BP ENERGREASE LMS EP 23 X 20KG",
+    "UnitOfMeasure": "KG",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 217,
+    "SapId": "1000199333",
+    "Description": "BRAKE,CLUTCH,CLEANER 20 LTR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 218,
+    "SapId": "1000199178",
+    "Description": "BRONZE AC-DC RODS 0320 7716",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 219,
+    "SapId": "1000495078",
+    "Description": "BROOM,TRADESMAN,MEDIUM STIFF,450MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 220,
+    "SapId": "1000220160",
+    "Description": "BRUSH,ARTISTS,FL FITCH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 221,
+    "SapId": "1000364485",
+    "Description": "BRUSH,ARTISTS,FL FITCH, NO.16",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 222,
+    "SapId": "1000290541",
+    "Description": "BRUSH,DUSTING,BENCH,BANNISTER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 223,
+    "SapId": "1000202172",
+    "Description": "BRUSH,ELEC,GRID/EXCITER,GE 41A330375P1",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 224,
+    "SapId": "1000232326",
+    "Description": "BRUSH,PAINT,100MM,WORKSHOP QLTY",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 225,
+    "SapId": "1000232325",
+    "Description": "BRUSH,PAINT,75MM,WORKSHOP QLTY",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 226,
+    "SapId": "1000291657",
+    "Description": "BRUSH,PAINT,ARTIST,ROYMAC 3060V-10",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 227,
+    "SapId": "1000214610",
+    "Description": "BRUSH,PAINT,BUDGET,12MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 228,
+    "SapId": "1000226520",
+    "Description": "BRUSH,PAINT,DISP,25MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 229,
+    "SapId": "1000226858",
+    "Description": "BRUSH,PAINT,DISP,50MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 230,
+    "SapId": "1000291514",
+    "Description": "BRUSH,PAINT,SIGNWRITERS,SIZE 4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 231,
+    "SapId": "1000291707",
+    "Description": "BRUSH,PAINT,SIGNWRITERS,SIZE 6",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 232,
+    "SapId": "1000291708",
+    "Description": "BRUSH,PAINT,SIGNWRITERS,SIZE 8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 233,
+    "SapId": "1000469856",
+    "Description": "BRUSH,PARTS CLEANER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 234,
+    "SapId": "1000419245",
+    "Description": "BRUSH,WIRE,SCRATCH, BRASS,WOOD HANDLE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 235,
+    "SapId": "1000226532",
+    "Description": "BRUSH,WIRE,SCRATCH,SS BRISTLE,4 ROW",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 236,
+    "SapId": "1000227098",
+    "Description": "BRUSH,WIRE,SCRATCH,SS,TIMBER HANDLE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 237,
+    "SapId": "1000198607",
+    "Description": "BTM1-0204P 1/8\" BSPT MALE STR 1/4\" HOSE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 238,
+    "SapId": "1000198604",
+    "Description": "BTM1-0404P 1/4\" BSPT MALE STR 1/4\" HOSE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 239,
+    "SapId": "1000390206",
+    "Description": "BUBBLE WRAP 1500MM -P10",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 240,
+    "SapId": "1000490020",
+    "Description": "BURR,CARBIDE CYL,1/4IN SHANK,3/8X3/4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 241,
+    "SapId": "1000490019",
+    "Description": "BURR,CARBIDE CYL,RAD/E 1/4 SHANK,3/8X3/4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 242,
+    "SapId": "1000483780",
+    "Description": "BURR,CARBIDE CYL,RAD/E DBL,1/4X5/8 SC100",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 243,
+    "SapId": "1000483778",
+    "Description": "BURR,CARBIDE CYL,RAD/E DBL,3/8X3/4 SC300",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 244,
+    "SapId": "1000483777",
+    "Description": "BURR,CARBIDE TREE,RAD/E DBL,1/4X5/8",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 245,
+    "SapId": "1000483822",
+    "Description": "BURR,CARBIDE TREE,RAD/E DBL,3/8X3/4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 246,
+    "SapId": "1000460213",
+    "Description": "BURR,DOUBLE CUT,BALL SHAPE,5/16X2 5/16X1/4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 247,
+    "SapId": "1000460211",
+    "Description": "BURR,DOUBLE CUT,CYLINDRICAL RADIUS HEAD,5/16X3/4X1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 248,
+    "SapId": "1000460212",
+    "Description": "BURR,DOUBLE CUT,TAPER SHAPE/RADIUS HEAD,5/16X7/8X1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 249,
+    "SapId": "1000452098",
+    "Description": "BURR,MR,3/8INX3/4INX1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 250,
+    "SapId": "1000452097",
+    "Description": "BURR,MR,5/16INX3/4INX1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 251,
+    "SapId": "1000452172",
+    "Description": "BURR,MR,CB1C,3/8INX3/4INX1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 252,
+    "SapId": "1000452099",
+    "Description": "BURR,MR,CB1C,5/16INX3/4INX1/4IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 253,
+    "SapId": "1000463217",
+    "Description": "BURR,MR,M41302,CB2C 3/4X1X1/4 IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 254,
+    "SapId": "1000199229",
+    "Description": "BUTYL MASTIC 400GM WHITE 0434-6906",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 255,
+    "SapId": "1000199572",
+    "Description": "C-2 STICKER 50X25MM DANGER 1,000 VOLTS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 256,
+    "SapId": "1000199573",
+    "Description": "C-2 STICKER 50X50MM DANGER 1,000 VOLTS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 257,
+    "SapId": "1000199092",
+    "Description": "CABAC XDW 38BK DUAL WALLED",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 258,
+    "SapId": "1000199067",
+    "Description": "CABAC290NT 300 x 4.8mm CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 259,
+    "SapId": "1000199063",
+    "Description": "CABACT140NT/100 CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 260,
+    "SapId": "1000199064",
+    "Description": "CABACT200NT/100 CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 261,
+    "SapId": "1000199065",
+    "Description": "CABACT250NT 250 x 4.8mm CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 262,
+    "SapId": "1000199069",
+    "Description": "CABACT365NT-HD 370 x 7.6mm CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 263,
+    "SapId": "1000199062",
+    "Description": "CABACT98NT/100 CABLE TIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 264,
+    "SapId": "1000453865",
+    "Description": "CABLE TIE,203X3.4X51MM,AQUA",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "product"
+  },
+  {
+    "Id": 265,
+    "SapId": "1000443776",
+    "Description": "CABLE TIE,NYLON,UV,HF,300X4.8MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 266,
+    "SapId": "1000199034",
+    "Description": "CAL16-6BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 267,
+    "SapId": "1000199041",
+    "Description": "CAL25-12BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 268,
+    "SapId": "1000199043",
+    "Description": "CAL35-10BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 269,
+    "SapId": "1000199044",
+    "Description": "CAL35-12BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 270,
+    "SapId": "1000199046",
+    "Description": "CAL50-10BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 271,
+    "SapId": "1000199027",
+    "Description": "CAL6-6BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 272,
+    "SapId": "1000199028",
+    "Description": "CAL6-8BM CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 273,
+    "SapId": "1000199051",
+    "Description": "CAL70-16 CABLE LUG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 274,
+    "SapId": "1000446410",
+    "Description": "CAP,BUMP,SHORT BRIM,UVEX U-STYLE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 275,
+    "SapId": "1000448076",
+    "Description": "CAP,DUST COVER,NIPPLE GREASE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 276,
+    "SapId": "1000457210",
+    "Description": "CAPE,NYLON,C/W INNER BIB - NO SAFETY STOCK ",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 277,
+    "SapId": "1000446815",
+    "Description": "CAPSCREW,1/4X1,UNC,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 278,
+    "SapId": "1000446818",
+    "Description": "CAPSCREW,3/8X1,UNC,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 279,
+    "SapId": "1000446833",
+    "Description": "CAPSCREW,5/16X1 1/2,UNC,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 280,
+    "SapId": "1000446817",
+    "Description": "CAPSCREW,5/16X1 1/4,UNC,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 281,
+    "SapId": "1000446816",
+    "Description": "CAPSCREW,5/16X1,UNC,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 282,
+    "SapId": "1000453315",
+    "Description": "CAPSCREW,BUT HD,8X25MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 283,
+    "SapId": "1000453317",
+    "Description": "CAPSCREW,BUT HD,M10X16MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 284,
+    "SapId": "1000453318",
+    "Description": "CAPSCREW,BUT HD,M10X35MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 285,
+    "SapId": "1000453319",
+    "Description": "CAPSCREW,BUT HD,M10X45MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 286,
+    "SapId": "1000453320",
+    "Description": "CAPSCREW,BUT HD,M12X30MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 287,
+    "SapId": "1000453057",
+    "Description": "CAPSCREW,BUT HD,M3X20MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 288,
+    "SapId": "1000453058",
+    "Description": "CAPSCREW,BUT HD,M4X10MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 289,
+    "SapId": "1000453059",
+    "Description": "CAPSCREW,BUT HD,M4X20MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 290,
+    "SapId": "1000453060",
+    "Description": "CAPSCREW,BUT HD,M5X10MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 291,
+    "SapId": "1000453311",
+    "Description": "CAPSCREW,BUT HD,M5X20MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 292,
+    "SapId": "1000453312",
+    "Description": "CAPSCREW,BUT HD,M5X30MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 293,
+    "SapId": "1000453313",
+    "Description": "CAPSCREW,BUT HD,M6X10MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 294,
+    "SapId": "1000210379",
+    "Description": "CAPSCREW,BUT HD,M6X20MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 295,
+    "SapId": "1000210377",
+    "Description": "CAPSCREW,BUT HD,M6X30MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 296,
+    "SapId": "1000453314",
+    "Description": "CAPSCREW,BUT HD,M8X12MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 297,
+    "SapId": "1000453316",
+    "Description": "CAPSCREW,BUT HD,M8X40MM LG,SS304",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 298,
+    "SapId": "1000453301",
+    "Description": "CAPSCREW,CSK HD,SKT,M10X16MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 299,
+    "SapId": "1000453302",
+    "Description": "CAPSCREW,CSK HD,SKT,M10X35MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 300,
+    "SapId": "1000453303",
+    "Description": "CAPSCREW,CSK HD,SKT,M10X45MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 301,
+    "SapId": "1000453304",
+    "Description": "CAPSCREW,CSK HD,SKT,M12X30MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 302,
+    "SapId": "1000453305",
+    "Description": "CAPSCREW,CSK HD,SKT,M12X60MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 303,
+    "SapId": "1000453056",
+    "Description": "CAPSCREW,CSK HD,SKT,M3X20MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 304,
+    "SapId": "1000453290",
+    "Description": "CAPSCREW,CSK HD,SKT,M4X10MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 305,
+    "SapId": "1000453291",
+    "Description": "CAPSCREW,CSK HD,SKT,M4X30MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 306,
+    "SapId": "1000453292",
+    "Description": "CAPSCREW,CSK HD,SKT,M5X10MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 307,
+    "SapId": "1000453293",
+    "Description": "CAPSCREW,CSK HD,SKT,M5X20MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 308,
+    "SapId": "1000453294",
+    "Description": "CAPSCREW,CSK HD,SKT,M5X30MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 309,
+    "SapId": "1000453295",
+    "Description": "CAPSCREW,CSK HD,SKT,M6X10MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 310,
+    "SapId": "1000453296",
+    "Description": "CAPSCREW,CSK HD,SKT,M6X20MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 311,
+    "SapId": "1000453297",
+    "Description": "CAPSCREW,CSK HD,SKT,M6X30MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 312,
+    "SapId": "1000453298",
+    "Description": "CAPSCREW,CSK HD,SKT,M8X12MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 313,
+    "SapId": "1000453299",
+    "Description": "CAPSCREW,CSK HD,SKT,M8X25MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 314,
+    "SapId": "1000453300",
+    "Description": "CAPSCREW,CSK HD,SKT,M8X40MM LG,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 315,
+    "SapId": "1000446807",
+    "Description": "CAPSCREW,M10X30,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 316,
+    "SapId": "1000446808",
+    "Description": "CAPSCREW,M10X40,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 317,
+    "SapId": "1000446809",
+    "Description": "CAPSCREW,M10X50,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 318,
+    "SapId": "1000446810",
+    "Description": "CAPSCREW,M12X40,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 319,
+    "SapId": "1000446811",
+    "Description": "CAPSCREW,M12X50,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 320,
+    "SapId": "1000446801",
+    "Description": "CAPSCREW,M5X16,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 321,
+    "SapId": "1000446802",
+    "Description": "CAPSCREW,M5X25,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 322,
+    "SapId": "1000446803",
+    "Description": "CAPSCREW,M6X16,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 323,
+    "SapId": "1000446804",
+    "Description": "CAPSCREW,M6X25,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 324,
+    "SapId": "1000446805",
+    "Description": "CAPSCREW,M6X30,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 325,
+    "SapId": "1000446806",
+    "Description": "CAPSCREW,M8X30,316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 326,
+    "SapId": "1000455821",
+    "Description": "CAPSCREW,SKT HD,M3X10MM,HIGH TENSILE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 327,
+    "SapId": "1000292449",
+    "Description": "CAPSCREW,SKT HD,M6X16MM LG,STL,12.9",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 328,
+    "SapId": "1000453375",
+    "Description": "CARDBOARD,CORR,915MMX75M",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 329,
+    "SapId": "1000199013",
+    "Description": "CAS1.5 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 330,
+    "SapId": "1000199017",
+    "Description": "CAS10 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 331,
+    "SapId": "1000199018",
+    "Description": "CAS16 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 332,
+    "SapId": "1000199014",
+    "Description": "CAS2.5 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 333,
+    "SapId": "1000199019",
+    "Description": "CAS25 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 334,
+    "SapId": "1000199020",
+    "Description": "CAS35 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 335,
+    "SapId": "1000199015",
+    "Description": "CAS4 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 336,
+    "SapId": "1000199021",
+    "Description": "CAS50 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 337,
+    "SapId": "1000199016",
+    "Description": "CAS6 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 338,
+    "SapId": "1000199022",
+    "Description": "CAS70 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 339,
+    "SapId": "1000199023",
+    "Description": "CAS95 CRIMP LINK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 340,
+    "SapId": "1000241509",
+    "Description": "CATALYST,ADH,250ML,SIKA-AKTIVATOR PRO",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 341,
+    "SapId": "1000291792",
+    "Description": "CHAIN,LINK,CHANDELIER,21X7MM,BRS,NKL PLT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 342,
+    "SapId": "1000226521",
+    "Description": "CHALK,MKG,ENGINEERS SPEC SPLIT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 343,
+    "SapId": "1000470334",
+    "Description": "CIRCLIP,INTERNAL,8MM,420,SS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 344,
+    "SapId": "1000459919",
+    "Description": "CLAMP,EARTH,POWERWELD 500 AMP",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 345,
+    "SapId": "1000226817",
+    "Description": "CLAMP,HOSE,TYPE O,20-23MM,ZN PLT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 346,
+    "SapId": "1000199777",
+    "Description": "CLASS 1 DANGER 415V 225 X 110",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 347,
+    "SapId": "1000199778",
+    "Description": "CLASS 1 REF.STCKERS 1,000V",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 348,
+    "SapId": "1000199772",
+    "Description": "CLASS 1 REFLECTIVE STICKERS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 349,
+    "SapId": "1000451611",
+    "Description": "CLEANER,BRUSH,10MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 350,
+    "SapId": "1000451612",
+    "Description": "CLEANER,BRUSH,13MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 351,
+    "SapId": "1000451319",
+    "Description": "CLEANER,BRUSH,6MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 352,
+    "SapId": "1000451320",
+    "Description": "CLEANER,BRUSH,7.5MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 353,
+    "SapId": "1000452588",
+    "Description": "CLEANER,DEGREASER",
+    "UnitOfMeasure": "L",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 354,
+    "SapId": "1000453403",
+    "Description": "CLEANER,DEGREASER,20 L",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 355,
+    "SapId": "1000455592",
+    "Description": "CLEANER,FLAWFINDER,300G AEROSOL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 356,
+    "SapId": "1000295474",
+    "Description": "CLEANER,PIPELINE,18MM DIA PROJECTILE",
+    "UnitOfMeasure": "EAA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 357,
+    "SapId": "1000292552",
+    "Description": "CLEANER,PIPELINE,AIR PRESS,22MM DIA",
+    "UnitOfMeasure": "BAG",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 358,
+    "SapId": "1000453402",
+    "Description": "CLEANER,RUST REMOVER,LAB 727",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 359,
+    "SapId": "1000453401",
+    "Description": "CLEANER,TANK,ALUMINUM ALLOY,LAB 450",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 360,
+    "SapId": "1000453404",
+    "Description": "CLEANER,WATER CORROSION",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 361,
+    "SapId": "1000486086",
+    "Description": "CLEANING CMPND,SPRAY AWAY PH BOOSTED,20L",
+    "UnitOfMeasure": "DR",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 362,
+    "SapId": "1000378616",
+    "Description": "CLEANING COMP,DEGREASER,FRESH FORCE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 363,
+    "SapId": "1000450985",
+    "Description": "CLEANING COMP,ELE CONT,AEROSOL,CO,350GM - 1000220150 DUPLICATED - USE 1000450985",
+    "UnitOfMeasure": "CAN",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 364,
+    "SapId": "1000261016",
+    "Description": "CLEANING COMP,SOLVENT,BRAKLEEN,SPRAY",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 365,
+    "SapId": "1000452173",
+    "Description": "CLEANING COMP,SPRAY AND WIPE,20L",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 366,
+    "SapId": "1000232247",
+    "Description": "CLEANING COMPOUND,ADHESIVE 350GM SPRAY",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 367,
+    "SapId": "1000451730",
+    "Description": "CLEANING SOLVENT",
+    "UnitOfMeasure": "L",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 368,
+    "SapId": "1000350297",
+    "Description": "CLIP,GLOVE,ORANGE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 369,
+    "SapId": "1000453389",
+    "Description": "CLOTH,ABRASIVE,180 GRIT,50MM W,50M LG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 370,
+    "SapId": "1000262042",
+    "Description": "CLOTH,ABRASIVE,240G,50MM W,50M LG,UTIL",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 371,
+    "SapId": "1000453390",
+    "Description": "CLOTH,ABRASIVE,400 GRIT,50MM W,50M LG",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 372,
+    "SapId": "1000216755",
+    "Description": "CLOTH,ABRASIVE,80 GRIT,50MM W,50M LG",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 373,
+    "SapId": "1000257502",
+    "Description": "CLOTH,ABRASIVE,80G,50MM W,50M LG,UTIL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 374,
+    "SapId": "1000262118",
+    "Description": "COCK,DRUM,3/4IN BSP,90DEG,PVC,BLK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 375,
+    "SapId": "1000199338",
+    "Description": "COLD GAL SPRAY 400 GRM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 376,
+    "SapId": "1000330097",
+    "Description": "COMPOUND,GASKET,HYLOMAR,HYL250,250ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 377,
+    "SapId": "1000291706",
+    "Description": "COMPOUND,THD TAP,125ML,TAP MAGIC",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 378,
+    "SapId": "1000202068",
+    "Description": "COMPOUND,THREAD,HIGH TEMPERATURE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 379,
+    "SapId": "1000199248",
+    "Description": "COND.DISC 75MM COARSE (440481)",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 380,
+    "SapId": "1000199247",
+    "Description": "COND.DISC 75MM FINE (440483)",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 381,
+    "SapId": "1000226828",
+    "Description": "CONDUIT,WELD WIRE,2MM,TWECO 5",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 382,
+    "SapId": "1000448757",
+    "Description": "CONNECTOR,BULLET,FEMALE BLUE,1.0 - 2.6MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 383,
+    "SapId": "1000448778",
+    "Description": "CONNECTOR,BULLET,FEMALE,RED,0.5-1.6MM2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 384,
+    "SapId": "1000448756",
+    "Description": "CONNECTOR,BULLET,MALE,BLUE,1.0 - 1.6MM2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 385,
+    "SapId": "1000448777",
+    "Description": "CONNECTOR,BULLET,MALE,RED,0.5-1.6MM2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 386,
+    "SapId": "1000484153",
+    "Description": "CONNECTOR,M,1 1/16-12 JIC X 20NPT, SS316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 387,
+    "SapId": "1000484154",
+    "Description": "CONNECTOR,M,7/8-14 JIC X 15NPT,SS316",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 388,
+    "SapId": "1000438971",
+    "Description": "CONTACT CLEAN,CRC 2015,AEROSOL,150GM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 389,
+    "SapId": "1000291672",
+    "Description": "CONTAINER,ICE CREAM,PLASTIC,2L",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 390,
+    "SapId": "1000291673",
+    "Description": "CONTAINER,ICE CREAM,PLASTIC,4L",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 391,
+    "SapId": "1000227526",
+    "Description": "CORROSION PREVENTIVE,TECTYL 506,OIL,20L",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 392,
+    "SapId": "1000220179",
+    "Description": "CORROSION PREVENTIVE,WD-40,DR/20L",
+    "UnitOfMeasure": "DR",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 393,
+    "SapId": "1000198533",
+    "Description": "COS1220AW FILM PALLET BAGS",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "product"
+  },
+  {
+    "Id": 394,
+    "SapId": "1000478844",
+    "Description": "COS36059 REASEA/BAGS 230 X 305 - 1000199408 REPLACED BY 1000478844",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 395,
+    "SapId": "1000198535",
+    "Description": "COSSHR4M SHRINK FILM",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "Product"
+  },
+  {
+    "Id": 396,
+    "SapId": "1000220113",
+    "Description": "COUPLING HALF,QD,PLUG,1/4IN BSPT M,STL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 397,
+    "SapId": "1000460050",
+    "Description": "COVER, ROLLER, NOOK AND AMP,CRANNY,100M",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 398,
+    "SapId": "1000483994",
+    "Description": "COVER, VISOR DEVILBISS MPV-44 PKT OF 50",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 399,
+    "SapId": "1000352809",
+    "Description": "COVER,LENS,OUTER,STANDARD,PACK OF 10",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 400,
+    "SapId": "1000489108",
+    "Description": "COVER,MDF,ROUND,12MMX150MM,TRIPLE VALVE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 401,
+    "SapId": "1000454625",
+    "Description": "COVER,ROLLER,ALL PAINTS,10MM PILE 270MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 402,
+    "SapId": "1000242554",
+    "Description": "COVER,WELDING LENS,(CR39),108*51MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 403,
+    "SapId": "1000401198",
+    "Description": "COVERALLS,DISP,MENS,3XL,ORANGE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 404,
+    "SapId": "1000257531",
+    "Description": "COVERALLS,DISP,MENS,XL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 405,
+    "SapId": "1000243474",
+    "Description": "COVERALLS,DISP,MENS,XL,ORANGE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 406,
+    "SapId": "1000243475",
+    "Description": "COVERALLS,DISP,MENS,XXL,ORANGE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 407,
+    "SapId": "1000232370",
+    "Description": "COVERALLS,DISP,MENS,XXL,WHT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 408,
+    "SapId": "1000290607",
+    "Description": "COVERALLS,DISP,MENS,XXXL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 409,
+    "SapId": "1000198528",
+    "Description": "CP18 CAP PLUG 0069-9363",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 410,
+    "SapId": "1000198530",
+    "Description": "CP21 CAP PLUG 0065-2120",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 411,
+    "SapId": "1000199234",
+    "Description": "CRC MINUTE MEND 4OZ 0065 9447",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 412,
+    "SapId": "1000198650",
+    "Description": "CRC SPRAY BOTTLES 0170 9009",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 413,
+    "SapId": "1000199316",
+    "Description": "CS100 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 414,
+    "SapId": "1000199317",
+    "Description": "CS112 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 415,
+    "SapId": "1000199318",
+    "Description": "CS132 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 416,
+    "SapId": "1000199319",
+    "Description": "CS160 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 417,
+    "SapId": "1000199320",
+    "Description": "CS180 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 418,
+    "SapId": "1000199313",
+    "Description": "CS71 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 419,
+    "SapId": "1000199314",
+    "Description": "CS80 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 420,
+    "SapId": "1000199315",
+    "Description": "CS90 PLASTIC FAN & BUSH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 421,
+    "SapId": "1000455309",
+    "Description": "CUP,BRUSH,CRIMP,S/S MOUNT,50X6MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 422,
+    "SapId": "1000211920",
+    "Description": "CUP,DISPOSABLE,180ML,FOAM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 423,
+    "SapId": "1000453377",
+    "Description": "CUP,DISPOSABLE,425ML,PLASTIC",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 424,
+    "SapId": "1000198668",
+    "Description": "CURIL T COMPOUND 100 GRM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 425,
+    "SapId": "1000452100",
+    "Description": "CUTTER,COUNTERSINK,82 DEGREE,3/8IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 426,
+    "SapId": "1000452161",
+    "Description": "CUTTER,COUNTERSINK,82 DEGREE,5/8IN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 427,
+    "SapId": "1000290533",
+    "Description": "CUTTER,CSK,5/8IN,90DEG,4 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 428,
+    "SapId": "1000470490",
+    "Description": "CUTTER,SNAP BLADE H/D,OLFA,L-1 140MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 429,
+    "SapId": "1000220151",
+    "Description": "CUTTING FLUID,TREFOLEX,500ML",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 430,
+    "SapId": "1000198611",
+    "Description": "D-04-04 NIPPLE BSPT MALE  x BSPT MALE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 431,
+    "SapId": "1000198680",
+    "Description": "D321R MOLYKOTE SPRAY 400ML 0034-3554",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 432,
+    "SapId": "1000199774",
+    "Description": "DANGER 1000V STICKERS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 433,
+    "SapId": "1000199768",
+    "Description": "DANGER ISOLATE ELSEWHERE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 434,
+    "SapId": "1000432271",
+    "Description": "DANGER STICKER 150x100MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 435,
+    "SapId": "1000431930",
+    "Description": "DANGER STICKER 50x30MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 436,
+    "SapId": "1000403663",
+    "Description": "DEGREASER,20L,SIMPLE GREEN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "product"
+  },
+  {
+    "Id": 437,
+    "SapId": "1000403842",
+    "Description": "DETECTOR,LEAK,LIQUID SNOOP,8 OZ",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 438,
+    "SapId": "1000455593",
+    "Description": "DEVELOPER,FLAWFINDER,300G AEROSOL",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 439,
+    "SapId": "1000483271",
+    "Description": "DIENUT,HEXAGONAL,5.0MM X 0.80MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 440,
+    "SapId": "1000483272",
+    "Description": "DIENUT,HEXAGONAL,6.0MM X 1.00MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 441,
+    "SapId": "1000483273",
+    "Description": "DIENUT,HEXAGONAL,8.0MM X 1.25MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 442,
+    "SapId": "1000226585",
+    "Description": "DIFFUSER,WELD TORCH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 443,
+    "SapId": "1000226759",
+    "Description": "DIFFUSER,WELD TORCH,HARD WIRE,0.9-1.6MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 444,
+    "SapId": "1000226760",
+    "Description": "DIFFUSER,WELD TORCH,HD,600A",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 445,
+    "SapId": "1000404074",
+    "Description": "DISC ABRASIVE, 150MM, 6HOLE, 120GRIT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 446,
+    "SapId": "1000453394",
+    "Description": "DISC,2IN,SURFACE CONDITION",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 447,
+    "SapId": "1000453393",
+    "Description": "DISC,3IN,SURFACE CONDITION",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 448,
+    "SapId": "1000453406",
+    "Description": "DISC,3IN,SURFACE CONDITION",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 449,
+    "SapId": "1000227048",
+    "Description": "DISC,ABRASIVE,100X16MM,40G,ZIRCON FLAP",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 450,
+    "SapId": "1000297311",
+    "Description": "DISC,ABRASIVE,125X22MM,40G,ZIRCON FLAP",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 451,
+    "SapId": "1000429909",
+    "Description": "DISC,ABRASIVE,150MM,120G,6 HOLE,VELCRO",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 452,
+    "SapId": "1000297210",
+    "Description": "DISC,ABRASIVE,150MM,150G,6 HOLE,ADH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 453,
+    "SapId": "1000297211",
+    "Description": "DISC,ABRASIVE,150MM,240G,6 HOLE,ADH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 454,
+    "SapId": "1000297212",
+    "Description": "DISC,ABRASIVE,150MM,320G,6 HOLE,ADH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 455,
+    "SapId": "1000297209",
+    "Description": "DISC,ABRASIVE,150MM,80G,6 HOLE,VELCRO",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 456,
+    "SapId": "1000292289",
+    "Description": "DISC,ABRASIVE,180X22MM,36G,ZIRCON FLAP",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 457,
+    "SapId": "1000495652",
+    "Description": "DISC,FIBRE,125X22MM,36 GRIT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 458,
+    "SapId": "1000495659",
+    "Description": "DISC,FIBRE,125X22MM,36 GRIT,CUBITRON",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 459,
+    "SapId": "1000495657",
+    "Description": "DISC,FIBRE,180X22MM,36 GRIT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 460,
+    "SapId": "1000495658",
+    "Description": "DISC,FIBRE,180X22MM,36 GRIT,CUBITRON",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 461,
+    "SapId": "1000495941",
+    "Description": "DISC,RAPID STRIP,SPEED-LOK,BEAR-TEX",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 462,
+    "SapId": "1000486391",
+    "Description": "DISC,ROLOC,75MM,80G,CLOTH,3MITE,YELLOW",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 463,
+    "SapId": "1000495609",
+    "Description": "DISC,SANDING,VELCRO,D/E,205MM/8INX36G",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 464,
+    "SapId": "1000205888",
+    "Description": "DISINFECTANT,GP,GLEN 20,SURFACE SPRAY",
+    "UnitOfMeasure": "can",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 465,
+    "SapId": "1000199544",
+    "Description": "DNMG 150604-PP IC907 TURNING TIPS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 466,
+    "SapId": "1000469757",
+    "Description": "DRILL,D186 STUB,HSS,2.5MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 467,
+    "SapId": "1000232268",
+    "Description": "DRILL,TWIST,JOBBER,1/8 DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 468,
+    "SapId": "1000295832",
+    "Description": "DRILL,TWIST,JOBBER,10.5MM DIA,HSS,2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 469,
+    "SapId": "1000227254",
+    "Description": "DRILL,TWIST,JOBBER,10MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 470,
+    "SapId": "1000293235",
+    "Description": "DRILL,TWIST,JOBBER,11.5MM DIA,HSS,2 FLUT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 471,
+    "SapId": "1000295833",
+    "Description": "DRILL,TWIST,JOBBER,11MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 472,
+    "SapId": "1000297170",
+    "Description": "DRILL,TWIST,JOBBER,12.5MM DIA,HSS,2 FLUT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 473,
+    "SapId": "1000227255",
+    "Description": "DRILL,TWIST,JOBBER,12MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 474,
+    "SapId": "1000452196",
+    "Description": "DRILL,TWIST,JOBBER,2.5MM DIA,HSS",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 475,
+    "SapId": "1000227247",
+    "Description": "DRILL,TWIST,JOBBER,2.5MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 476,
+    "SapId": "1000295828",
+    "Description": "DRILL,TWIST,JOBBER,3.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 477,
+    "SapId": "1000226850",
+    "Description": "DRILL,TWIST,JOBBER,3MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 478,
+    "SapId": "1000295829",
+    "Description": "DRILL,TWIST,JOBBER,4.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 479,
+    "SapId": "1000226851",
+    "Description": "DRILL,TWIST,JOBBER,4MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 480,
+    "SapId": "1000293233",
+    "Description": "DRILL,TWIST,JOBBER,5.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 481,
+    "SapId": "1000291432",
+    "Description": "DRILL,TWIST,JOBBER,5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 482,
+    "SapId": "1000295830",
+    "Description": "DRILL,TWIST,JOBBER,6.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 483,
+    "SapId": "1000240330",
+    "Description": "DRILL,TWIST,JOBBER,6.8MM DIA,HSS,2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 484,
+    "SapId": "1000293234",
+    "Description": "DRILL,TWIST,JOBBER,6MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 485,
+    "SapId": "1000295831",
+    "Description": "DRILL,TWIST,JOBBER,7.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 486,
+    "SapId": "1000226917",
+    "Description": "DRILL,TWIST,JOBBER,7MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 487,
+    "SapId": "1000293236",
+    "Description": "DRILL,TWIST,JOBBER,8.5MM DIA,HSS,2 FLUTE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 488,
+    "SapId": "1000227251",
+    "Description": "DRILL,TWIST,JOBBER,8MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 489,
+    "SapId": "1000227253",
+    "Description": "DRILL,TWIST,JOBBER,9.5MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 490,
+    "SapId": "1000227252",
+    "Description": "DRILL,TWIST,JOBBER,9MM DIA,HSS,TINITE",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 491,
+    "SapId": "1000290467",
+    "Description": "DRILL,TWIST,STUB,NO.10,COBALT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 492,
+    "SapId": "1000290468",
+    "Description": "DRILL,TWIST,STUB,NO.19,COBALT",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 493,
+    "SapId": "1000211166",
+    "Description": "DRINK BASE SQWICHER LEMON LIME",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 494,
+    "SapId": "1000478962",
+    "Description": "DRINK,SQWICHER. ASSORTED FLAVOURS",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 495,
+    "SapId": "1000478962",
+    "Description": "DRINK,SQWICHER. ASSORTED FLAVOURS",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 496,
+    "SapId": "1000198553",
+    "Description": "DURACELL AA BATTERIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 497,
+    "SapId": "1000199388",
+    "Description": "DUST PAN METAL 0423 2706",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 498,
+    "SapId": "1000201544",
+    "Description": "DUSTPAN,MTL,ENAMEL FINISH",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 499,
+    "SapId": "1000258669",
+    "Description": "E,BARRIER,75MM,50M LG,RED/WHT,AS2648",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 500,
+    "SapId": "1000198852",
+    "Description": "E515 1/4 UNC NO:6 TA",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 501,
+    "SapId": "100198915",
+    "Description": "E515 3/16 NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 502,
+    "SapId": "1000198872",
+    "Description": "E515 3/4 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 503,
+    "SapId": "1000198860",
+    "Description": "E515 3/8 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 504,
+    "SapId": "1000198856",
+    "Description": "E515 5/16 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 505,
+    "SapId": "1000198868",
+    "Description": "E515 5/8 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 506,
+    "SapId": "1000198864",
+    "Description": "E515 7/16 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 507,
+    "SapId": "1000198876",
+    "Description": "E515 7/8 UNC NO:6 TAP SET",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 508,
+    "SapId": "1000478218",
+    "Description": "EAR MUFFS 0603 8084 - 1000199462 replaced by 1000478218 ",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 509,
+    "SapId": "1000478218",
+    "Description": "EAR MUFFS 0603 8084 - 1000199462 replaced by 1000478218 ",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 510,
+    "SapId": "1000457160",
+    "Description": "EARPLUG,DISPOSABLE HI-COM LIME CL2/200",
+    "UnitOfMeasure": "BAG",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 511,
+    "SapId": "1000453486",
+    "Description": "EARPLUG,ROCKET,UNCORD,CL4",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 512,
+    "SapId": "1000115960",
+    "Description": "Earplugs,Quiet Band",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 513,
+    "SapId": "1000257526",
+    "Description": "EARPLUGS,SAFETY,TAPER",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 514,
+    "SapId": "1000199206",
+    "Description": "EL52 TIP DIFFUSER 0066 7777",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 515,
+    "SapId": "1000226606",
+    "Description": "ELECTRODE,WELD,2.4MM,TUNGSTEN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 516,
+    "SapId": "1000226722",
+    "Description": "ELECTRODE,WELD,8MM,GOUGING,CARBON",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 517,
+    "SapId": "1000198391",
+    "Description": "EMERY CLOTH 240G 0042 2604",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 518,
+    "SapId": "1000198557",
+    "Description": "ENER409 6V BATTERIES",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 519,
+    "SapId": "1000198707",
+    "Description": "ENERPAC OIL 5LTR 0787 9108",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 520,
+    "SapId": "1000199350",
+    "Description": "EPOXY RUST PAINT 350G",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 521,
+    "SapId": "1000199223",
+    "Description": "EXTRUDED SOLDER 1% TIN",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 522,
+    "SapId": "1000446409",
+    "Description": "FACE SHIELD,LOWER,FLIP-UP,UVEX CLR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 523,
+    "SapId": "1000262620",
+    "Description": "FACESHIELD,INDUST,DARK VISOR",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 524,
+    "SapId": "1000491339",
+    "Description": "FAN GRINDER, F 4020/6 A80 40 X 20",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 525,
+    "SapId": "1000198969",
+    "Description": "FFD - DO NOT USE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 526,
+    "SapId": "1000198971",
+    "Description": "FFD - DO NOT USE",
+    "UnitOfMeasure": "M",
+    "IsSite": "product"
+  },
+  {
+    "Id": 527,
+    "SapId": "1000198534",
+    "Description": "FFD - DO NOT USE",
+    "UnitOfMeasure": "ROL",
+    "IsSite": "product"
+  },
+  {
+    "Id": 528,
+    "SapId": "1000452166",
+    "Description": "FILE,HALF-ROUND,2ND CUT,250MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 529,
+    "SapId": "1000290685",
+    "Description": "FILE,HAND,FL,SMOOTH,200MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 530,
+    "SapId": "1000257552",
+    "Description": "FILE,HAND,FL,SMOOTH,300MM,TAPERED",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 531,
+    "SapId": "1000232394",
+    "Description": "FILE,HAND,FLAT,SMOOTH,250MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 532,
+    "SapId": "1000452169",
+    "Description": "FILE,HAND,RD,SMOOTH,150MM - 1000290699 DUPLICATED - USE 1000452169",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 533,
+    "SapId": "1000452165",
+    "Description": "FILE,HAND1/2 RD,SMOOTH,250MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 534,
+    "SapId": "1000452168",
+    "Description": "FILE,ROUND,200MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 535,
+    "SapId": "1000452167",
+    "Description": "FILE,ROUND,250MM",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 536,
+    "SapId": "1000262773",
+    "Description": "FILTER ,PARTICLE,WELD HELMET, 837010",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 537,
+    "SapId": "1000220152",
+    "Description": "FILTER LENS WELDING 108X51MM SHADE 13",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 538,
+    "SapId": "1000489967",
+    "Description": "FILTER,ADFLO,GAS,SPEEDGLAS,AIB1E1",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 539,
+    "SapId": "1000472143",
+    "Description": "FILTER,ADFLO,SPEEDGLASS,5 IN PACK",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 540,
+    "SapId": "1000219040",
+    "Description": "FILTER,AIR,RESP,ORG,GAS,SUNDSTROM 217/A1",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 541,
+    "SapId": "1000454728",
+    "Description": "FILTER,AIR,RESP,PARTICLE AND ACID GAS P3",
+    "UnitOfMeasure": "PAC",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 542,
+    "SapId": "1000470434",
+    "Description": "FILTER,DUSTMASTER,PAPR-P2",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  },
+  {
+    "Id": 543,
+    "SapId": "1000293362",
+    "Description": "FILTER,PARTICLE,SUNDSTROM 210/310,",
+    "UnitOfMeasure": "EA",
+    "IsSite": "Site"
+  }
+]

@@ -51,7 +51,24 @@ export default class AccountStore {
     }
   };
 
-  register = async (creds: AccountRegisterValues) => {};
+  register = async (creds: AccountRegisterValues) => {
+    try {
+      const user = await agent.AccountRequests.register(creds);
+
+      // set the token
+      // wont be set if the user is null
+      store.commonStore.setToken(user.token);
+
+      // set the user in client side data
+      runInAction(() => (this.user = user));
+
+      store.modalStore.closeModal();
+
+      history.push('/consumables');
+    } catch (error) {
+      throw error;
+    }
+  };
 
   logout = () => {
     store.commonStore.setToken(null);

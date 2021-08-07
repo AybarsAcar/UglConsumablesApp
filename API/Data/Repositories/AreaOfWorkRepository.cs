@@ -21,9 +21,7 @@ namespace API.Data.Repositories
 
     public async Task<List<AreaOfWork>> GetAreaOfWorksAsync()
     {
-      var query = _context.AreaOfWorks.Include(a => a.ConsumableProducts).AsQueryable();
-
-      return await query.ToListAsync();
+      return await _context.AreaOfWorks.ToListAsync();
     }
 
     public async Task<AreaOfWork> GetAreaOfWorkByServiceOrderAsync(int serviceOrder)

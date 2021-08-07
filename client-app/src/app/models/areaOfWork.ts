@@ -5,6 +5,12 @@ export interface AreaOfWorkFormValues {
   serviceOrder: number;
 }
 
+export interface AreaOfWorkListItem {
+  id: number;
+  description: string;
+  serviceOrder: number;
+}
+
 export interface AreaOfWork {
   id: number;
   description: string;

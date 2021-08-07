@@ -46,6 +46,10 @@ export default class ConsumableStore {
     }
   };
 
+  loadConsumable = async (sapId: number) => {
+    throw new Error('Method not implemented.');
+  };
+
   setIsLoadingInitial = (state: boolean) => {
     this.isLoadingInitial = state;
   };
