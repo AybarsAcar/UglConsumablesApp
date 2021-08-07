@@ -1,12 +1,12 @@
 import { makeAutoObservable } from 'mobx';
 import agent from '../api/agent';
-import { AreaOfWork, AreaOfWorkListItem } from '../models/areaOfWork';
+import { AreaOfWork } from '../models/areaOfWork';
 import { store } from './store';
 
 export default class AreaOfWorkStore {
   selectedAreaOfWork: AreaOfWork | null = null;
 
-  areaOfWorks: AreaOfWorkListItem[] = [];
+  areaOfWorks: AreaOfWork[] = [];
 
   isLoading = false;
   isLoadingInitial = false;
@@ -42,11 +42,13 @@ export default class AreaOfWorkStore {
     try {
       const result = await agent.AreaOfWorkRequests.details(serviceOrder);
 
-      this.selectedAreaOfWork = result;
+      if (result != null) {
+        this.selectedAreaOfWork = result;
 
-      result.consumableProducts.forEach((consumable) => {
-        store.consumableStore.consumableRegistry.set(consumable.id, consumable);
-      });
+        await store.consumableStore.loadConsumables(
+          this.selectedAreaOfWork.serviceOrder
+        );
+      }
     } catch (error) {
       console.log(error);
       this.setIsLoadingInitial(false);

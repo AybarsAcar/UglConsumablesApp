@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace API.DTOs
 {
-  public class ConsumableDto
+  public class CreateConsumableDto
   {
     [Required] public int SapId { get; set; }
     [Required] public string Description { get; set; }

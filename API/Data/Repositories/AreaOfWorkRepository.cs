@@ -26,7 +26,7 @@ namespace API.Data.Repositories
 
     public async Task<AreaOfWork> GetAreaOfWorkByServiceOrderAsync(int serviceOrder)
     {
-      return await _context.AreaOfWorks.Include(a => a.ConsumableProducts)
+      return await _context.AreaOfWorks
         .FirstOrDefaultAsync(x => x.ServiceOrder == serviceOrder);
     }
 

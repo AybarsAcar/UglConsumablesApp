@@ -6,7 +6,12 @@ namespace API.Interfaces
 {
   public interface IConsumableRepository
   {
-    public Task<List<Consumable>> GetConsumablesAsync();
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="serviceOrderId">Area of Works service order id</param>
+    /// <returns></returns>
+    public Task<List<Consumable>> GetConsumablesAsync(int? serviceOrderId);
 
     public Task<Consumable> GetConsumableBySapIdAsync(int sapId);
 

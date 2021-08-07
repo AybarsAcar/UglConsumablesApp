@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210806084531_UserDbIdFieldChanged")]
-    partial class UserDbIdFieldChanged
+    [Migration("20210807221644_RelationshipDirectionChanged")]
+    partial class RelationshipDirectionChanged
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -95,6 +95,9 @@ namespace API.Data.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<int?>("ConsumableId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
@@ -102,6 +105,8 @@ namespace API.Data.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ConsumableId");
 
                     b.ToTable("AreaOfWorks");
                 });
@@ -112,9 +117,6 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int?>("AreaOfWorkId")
-                        .HasColumnType("integer");
 
                     b.Property<string>("Description")
                         .HasColumnType("text");
@@ -129,8 +131,6 @@ namespace API.Data.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AreaOfWorkId");
 
                     b.ToTable("Consumables");
                 });
@@ -291,11 +291,11 @@ namespace API.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("API.Entities.Consumable", b =>
+            modelBuilder.Entity("API.Entities.AreaOfWork", b =>
                 {
-                    b.HasOne("API.Entities.AreaOfWork", null)
-                        .WithMany("ConsumableProducts")
-                        .HasForeignKey("AreaOfWorkId");
+                    b.HasOne("API.Entities.Consumable", null)
+                        .WithMany("AreaOfWorks")
+                        .HasForeignKey("ConsumableId");
                 });
 
             modelBuilder.Entity("API.Entities.RefreshToken", b =>
@@ -363,9 +363,9 @@ namespace API.Data.Migrations
                     b.Navigation("RefreshTokens");
                 });
 
-            modelBuilder.Entity("API.Entities.AreaOfWork", b =>
+            modelBuilder.Entity("API.Entities.Consumable", b =>
                 {
-                    b.Navigation("ConsumableProducts");
+                    b.Navigation("AreaOfWorks");
                 });
 #pragma warning restore 612, 618
         }

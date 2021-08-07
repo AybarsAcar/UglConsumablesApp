@@ -4,11 +4,7 @@
 //
 
 import axios, { AxiosError, AxiosResponse } from 'axios';
-import {
-  AreaOfWork,
-  AreaOfWorkFormValues,
-  AreaOfWorkListItem,
-} from '../models/areaOfWork';
+import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { Consumable, ConsumableFormValues } from '../models/consumable';
 import {
   AccountLoginValues,
@@ -121,6 +117,8 @@ const requests = {
 // all the requests to our endpoints in consumables controller
 const ConsumableRequests = {
   list: () => requests.get<Consumable[]>('/consumable'),
+  listByServiceOrder: (serviceOrder: number) =>
+    requests.get<Consumable[]>(`/consumable?serviceOrderId=${serviceOrder}`),
   details: (sapId: number) => requests.get<Consumable>(`/consumable/${sapId}`),
   create: (consumable: ConsumableFormValues) =>
     requests.post<void>('/consumable', consumable),
@@ -128,7 +126,7 @@ const ConsumableRequests = {
 
 // all the requests to our endpoints in area of work controller
 const AreaOfWorkRequests = {
-  list: () => requests.get<AreaOfWorkListItem[]>('/areaOfWork'),
+  list: () => requests.get<AreaOfWork[]>('/areaOfWork'),
   details: (serviceOrder: number) =>
     requests.get<AreaOfWork>(`/areaOfWork/${serviceOrder}`),
   create: (areaOfWork: AreaOfWorkFormValues) =>

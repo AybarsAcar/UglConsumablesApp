@@ -29,16 +29,27 @@ export default class ConsumableStore {
    * loads all the consumables from the server through agent
    * and populates the client data store
    */
-  loadConsumables = async () => {
+  loadConsumables = async (serviceOrderId: number | null = null) => {
     this.isLoadingInitial = true;
 
     try {
-      const result = await agent.ConsumableRequests.list();
+      if (serviceOrderId == null) {
+        const result = await agent.ConsumableRequests.list();
 
-      // populate the registry
-      result.forEach((consumable) => {
-        this.consumableRegistry.set(consumable.id, consumable);
-      });
+        // populate the registry
+        result.forEach((consumable) => {
+          this.consumableRegistry.set(consumable.id, consumable);
+        });
+      } else {
+        const result = await agent.ConsumableRequests.listByServiceOrder(
+          serviceOrderId
+        );
+
+        // populate the registry
+        result.forEach((consumable) => {
+          this.consumableRegistry.set(consumable.id, consumable);
+        });
+      }
       this.setIsLoadingInitial(false);
     } catch (error) {
       console.log(error);

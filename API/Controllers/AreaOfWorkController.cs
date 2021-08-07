@@ -56,26 +56,5 @@ namespace API.Controllers
     {
       return await _unit.AreaOfWorkRepository.GetAreaOfWorkByServiceOrderAsync(serviceOrderId);
     }
-
-    /// <summary>
-    /// adds a consumable to an area of work
-    /// TODO: maybe extract this into its own repository method
-    /// </summary>
-    /// <param name="serviceOrderId">from query itself</param>
-    /// <param name="consumableSapId">from query parameters</param>
-    /// <returns></returns>
-    [HttpPost("{serviceOrderId}")]
-    public async Task<IActionResult> AddConsumable(int serviceOrderId, [FromQuery] int consumableSapId)
-    {
-      var areaOfWork = await _unit.AreaOfWorkRepository.GetAreaOfWorkByServiceOrderAsync(serviceOrderId);
-
-      var consumableToAdd = await _unit.ConsumableRepository.GetConsumableBySapIdAsync(consumableSapId);
-
-      areaOfWork.ConsumableProducts.Add(consumableToAdd);
-
-      if (await _unit.Complete()) return Ok();
-
-      return BadRequest("Error adding the consumable");
-    }
   }
 }
