@@ -30,9 +30,14 @@ function HomePage() {
 
         {accountStore.isLoggedIn ? (
           <>
-            <Header as="h2" inverted content="Welcome to Ugl Consumables App" />
+            <Header
+              as="h2"
+              inverted
+              content={`Welcome ${accountStore.user?.username}`}
+              style={{ paddingBottom: '50px' }}
+            />
             <Button as={Link} to="/consumables" size="huge" inverted>
-              Start ordering consumales
+              Start ordering consumables
             </Button>
           </>
         ) : (
@@ -55,6 +60,7 @@ function HomePage() {
             <Divider horizontal inverted>
               Or
             </Divider>
+            <p>Contact UGL Application Support</p>
           </>
         )}
       </Container>

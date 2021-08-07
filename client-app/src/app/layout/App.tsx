@@ -19,10 +19,12 @@ function App() {
   useEffect(() => {
     if (commonStore.token) {
       accountStore.getUser().finally(() => commonStore.setAppLoaded());
+    } else {
+      commonStore.setAppLoaded();
     }
   }, [commonStore, accountStore]);
 
-  if (!commonStore.isAppLoaded) return <Loader inverted>Loading ...</Loader>;
+  if (!commonStore.isAppLoaded) return <Loader>Loading ...</Loader>;
 
   return (
     <>
