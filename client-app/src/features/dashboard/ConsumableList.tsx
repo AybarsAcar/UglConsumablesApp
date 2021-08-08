@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import { Button, Table } from 'semantic-ui-react';
+import { Button, Header, Segment, Table } from 'semantic-ui-react';
 import { useStore } from '../../app/stores/store';
 import ConsumableListItem from '../consumables/ConsumableListItem';
 
@@ -9,7 +9,8 @@ function ConsumableList() {
   if (tabStore.activeTabIndex !== 2) return <></>;
 
   return (
-    <>
+    <Segment clearing>
+      <Header content="Select Consumables to Order" sub color="teal" />
       <Table celled>
         <Table.Header>
           <Table.Row>
@@ -41,7 +42,7 @@ function ConsumableList() {
         floated="right"
         primary
       />
-    </>
+    </Segment>
   );
 }
 

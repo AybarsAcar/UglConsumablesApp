@@ -9,8 +9,8 @@ function NotFound() {
         Oops - we've looked everywhere and could not find this.
       </Header>
       <Segment.Inline>
-        <Button as={Link} to="/activities" primary>
-          Return to activities page
+        <Button size="large" as={Link} to="/consumables" primary>
+          Return to dashboard
         </Button>
       </Segment.Inline>
     </Segment>

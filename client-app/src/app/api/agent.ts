@@ -5,11 +5,7 @@
 
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
-import {
-  Consumable,
-  ConsumableFormValues,
-  ConsumableSubmitValues,
-} from '../models/consumable';
+import { Consumable, ConsumableFormValues } from '../models/consumable';
 import {
   AccountLoginValues,
   AccountRegisterValues,

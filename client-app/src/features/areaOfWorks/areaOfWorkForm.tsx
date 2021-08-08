@@ -63,7 +63,7 @@ function AreaOfWorkForm() {
 
   return (
     <Segment clearing>
-      <Header content="Consumable Details" sub color="teal" />
+      <Header content="Area of Work Details" sub color="teal" />
       <Formik
         enableReinitialize
         validationSchema={validationSchema}

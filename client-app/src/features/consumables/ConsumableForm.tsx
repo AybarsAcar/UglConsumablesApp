@@ -11,6 +11,7 @@ import MyTextInput from '../../app/common/forms/MyTextInput';
 import MyTextArea from '../../app/common/forms/MyTextArea';
 import MySelectInput from '../../app/common/forms/MySelectInput';
 import { Link } from 'react-router-dom';
+import LoadingComponent from '../../app/layout/LoadingComponent';
 
 const unitOfMeasureOptions = [
   { text: 'EA', value: 'EA' },
@@ -66,7 +67,8 @@ function ConsumableForm() {
     unitOfMeasure: Yup.string().required('Unit of Measure is required'),
   });
 
-  if (areaOfWorkStore.isLoadingInitial) return <></>;
+  if (areaOfWorkStore.isLoadingInitial)
+    return <LoadingComponent inverted={true} content="Loading..." />;
 
   return (
     <Segment clearing>
