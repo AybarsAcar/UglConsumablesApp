@@ -124,7 +124,7 @@ const ConsumableRequests = {
   listByServiceOrder: (serviceOrder: number) =>
     requests.get<Consumable[]>(`/consumable?serviceOrderId=${serviceOrder}`),
   details: (sapId: number) => requests.get<Consumable>(`/consumable/${sapId}`),
-  create: (consumable: ConsumableSubmitValues) =>
+  create: (consumable: ConsumableFormValues) =>
     requests.post<void>('/consumable', consumable),
   add: (sapId: number, serviceOrderId: number) =>
     requests.post<void>(`/consumable/${sapId}/${serviceOrderId}`, {}),

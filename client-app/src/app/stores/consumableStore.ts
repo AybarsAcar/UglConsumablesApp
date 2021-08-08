@@ -61,9 +61,20 @@ export default class ConsumableStore {
     }
   };
 
-  addToServiceOrder = async (sapId: number, serviceOrderId: number) => {};
+  addToServiceOrder = async (sapId: number, serviceOrderId: number) => {
+    this.isLoading = true;
 
-  createConsumable = async (consumable: ConsumableSubmitValues) => {
+    try {
+      await agent.ConsumableRequests.add(sapId, serviceOrderId);
+
+      this.isLoading = false;
+    } catch (error) {
+      console.log(error);
+      this.isLoading = false;
+    }
+  };
+
+  createConsumable = async (consumable: ConsumableFormValues) => {
     try {
       await agent.ConsumableRequests.create(consumable);
     } catch (error) {

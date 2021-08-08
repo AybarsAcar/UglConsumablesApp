@@ -26,13 +26,34 @@ namespace API.Controllers
 
     /// <summary>
     /// creates a consumable
+    /// TODO
     /// </summary>
     /// <param name="consumableDto">data sent from client to create a consumable</param>
     /// <returns></returns>
     [HttpPost]
     public async Task<IActionResult> CreateConsumable(CreateConsumableDto consumableDto)
     {
-      await _unit.ConsumableRepository.CreateConsumableAsync(_mapper.Map<Consumable>(consumableDto));
+      var consumable = new Consumable
+      {
+        SapId = consumableDto.SapId,
+        Description = consumableDto.Description,
+        UnitOfMeasure = consumableDto.UnitOfMeasure,
+        IsSite = consumableDto.IsSite,
+        Quantity = 0,
+        AreaOfWorks = new List<AreaOfWork>()
+      };
+      
+      await _unit.ConsumableRepository.CreateConsumableAsync(consumable);
+
+      if (consumableDto.ServiceOrderIds.Count > 0)
+      {
+        foreach (var serviceOrderId in consumableDto.ServiceOrderIds)
+        {
+          var areaOfWorkToAdd = await _unit.AreaOfWorkRepository.GetAreaOfWorkByServiceOrderAsync(serviceOrderId);
+
+          consumable.AreaOfWorks.Add(areaOfWorkToAdd);
+        }
+      }
 
       if (await _unit.Complete())
       {

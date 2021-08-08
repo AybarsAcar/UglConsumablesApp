@@ -11,6 +11,6 @@ namespace API.DTOs
     [Required] public string UnitOfMeasure { get; set; }
     [Required] public bool IsSite { get; set; }
     
-    public List<AreaOfWork> AreaOfWorks { get; set; }
+    public List<int> ServiceOrderIds { get; set; }
   }
 }

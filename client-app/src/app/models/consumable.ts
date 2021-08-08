@@ -27,7 +27,7 @@ export class ConsumableFormValues {
   unitOfMeasure: string = '';
   isSite: boolean = false;
 
-  areaOfWorks: number[] = [];
+  ServiceOrderIds: number[] = [];
 
   constructor(consumable?: ConsumableFormValues) {
     if (consumable) {
@@ -35,7 +35,7 @@ export class ConsumableFormValues {
       this.description = consumable.description;
       this.unitOfMeasure = consumable.unitOfMeasure;
       this.isSite = consumable.isSite;
-      this.areaOfWorks = consumable.areaOfWorks;
+      this.ServiceOrderIds = consumable.ServiceOrderIds;
     }
   }
 }

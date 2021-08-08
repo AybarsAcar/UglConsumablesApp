@@ -52,24 +52,9 @@ function ConsumableForm() {
   function handleFormSubmit(consumable: ConsumableFormValues) {
     if (initialSapId == null) {
       // creating a new one
-      let newConsumable = {
-        sapId: consumable.sapId!,
-        description: consumable.description,
-        unitOfMeasure: consumable.unitOfMeasure,
-        isSite: consumable.isSite,
-      };
+
       consumableStore
-        .createConsumable(newConsumable)
-        .then(() => {
-          if (consumable.areaOfWorks.length > 0) {
-            consumable.areaOfWorks.forEach((serviceOrder) => {
-              consumableStore.addToServiceOrder(
-                newConsumable.sapId,
-                serviceOrder
-              );
-            });
-          }
-        })
+        .createConsumable(consumable)
         .then(() => history.push('/consumables'));
     } else {
       // updating an existing one
@@ -115,7 +100,7 @@ function ConsumableForm() {
               isMultiple={true}
               options={areaOfWorkStore.areaOfWorkOptions}
               placeholder="Select Area of Works"
-              name="areaOfWorks"
+              name="ServiceOrderIds"
             />
 
             <Button
