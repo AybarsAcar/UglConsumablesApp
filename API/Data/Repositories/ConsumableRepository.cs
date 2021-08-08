@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,7 +35,7 @@ namespace API.Data.Repositories
     {
       return await _context.Consumables
         .Include(c => c.AreaOfWorks)
-        .SingleOrDefaultAsync(x => x.SapId == sapId);
+        .FirstOrDefaultAsync(x => x.SapId == sapId);
     }
 
     public async Task CreateConsumableAsync(Consumable consumable)

@@ -42,7 +42,7 @@ namespace API.Controllers
         Quantity = 0,
         AreaOfWorks = new List<AreaOfWork>()
       };
-      
+
       await _unit.ConsumableRepository.CreateConsumableAsync(consumable);
 
       if (dto.ServiceOrderIds.Count > 0)
@@ -71,15 +71,15 @@ namespace API.Controllers
     /// <param name="serviceOrderId"></param>
     /// <returns></returns>
     [HttpGet]
-    public async Task<ActionResult<List<Consumable>>> GetConsumables([FromQuery] int? serviceOrderId)
+    public async Task<ActionResult<List<ConsumableDto>>> GetConsumables([FromQuery] int? serviceOrderId)
     {
-      return Ok(await _unit.ConsumableRepository.GetConsumablesAsync(serviceOrderId));
+      return Ok(_mapper.Map<List<ConsumableDto>>(await _unit.ConsumableRepository.GetConsumablesAsync(serviceOrderId)));
     }
 
     [HttpGet("{sapId}")]
-    public async Task<ActionResult<Consumable>> GetConsumableBySapId(int sapId)
+    public async Task<ActionResult<ConsumableDto>> GetConsumableBySapId(int sapId)
     {
-      return Ok(await _unit.ConsumableRepository.GetConsumableBySapIdAsync(sapId));
+      return Ok(_mapper.Map<ConsumableDto>(await _unit.ConsumableRepository.GetConsumableBySapIdAsync(sapId)));
     }
 
     /// <summary>

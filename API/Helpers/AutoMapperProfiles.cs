@@ -10,6 +10,10 @@ namespace API.Helpers
     {
       // from -> to
       CreateMap<ConsumableCreateDto, Consumable>();
+
+      CreateMap<Consumable, ConsumableDto>();
+      
+      CreateMap<AreaOfWork, AreaOfWorkDto>();
     }
   }
 }
