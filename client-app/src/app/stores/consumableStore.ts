@@ -4,11 +4,7 @@
 
 import { makeAutoObservable } from 'mobx';
 import agent from '../api/agent';
-import {
-  Consumable,
-  ConsumableFormValues,
-  ConsumableSubmitValues,
-} from '../models/consumable';
+import { Consumable, ConsumableFormValues } from '../models/consumable';
 
 export default class ConsumableStore {
   public consumableRegistry = new Map<number, Consumable>();

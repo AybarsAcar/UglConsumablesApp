@@ -10,6 +10,7 @@ import NotFound from '../../features/errors/NotFound';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import ConsumableForm from '../../features/consumables/ConsumableForm';
+import areaOfWorkForm from '../../features/areaOfWorks/areaOfWorkForm';
 
 function App() {
   // get the location so we can re-render the component as the route changes
@@ -55,6 +56,18 @@ function App() {
                   exact
                   path="/edit/consumable/:sapId"
                   component={ConsumableForm}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/create/areaOfWork"
+                  component={areaOfWorkForm}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/edit/areaOfWork/:sapId"
+                  component={areaOfWorkForm}
                 />
 
                 {/* NOT FOUND PAGE - This is a fallback page when the route is not found */}

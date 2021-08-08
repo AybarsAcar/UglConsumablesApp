@@ -35,22 +35,8 @@ function NavBar() {
 
                   <Dropdown.Item
                     as={Link}
-                    to={`/edit/areaOfWork`}
-                    text="Edit an Area of Work"
-                    icon="industry"
-                  />
-
-                  <Dropdown.Item
-                    as={Link}
                     to={`/create/consumable`}
                     text="Create a Consumable"
-                    icon="dolly"
-                  />
-
-                  <Dropdown.Item
-                    as={Link}
-                    to={`/edit/consumable`}
-                    text="Edit a Consumable"
                     icon="dolly"
                   />
 

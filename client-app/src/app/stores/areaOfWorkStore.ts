@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from 'mobx';
 import agent from '../api/agent';
-import { AreaOfWork } from '../models/areaOfWork';
+import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { store } from './store';
 
 export default class AreaOfWorkStore {
@@ -65,6 +65,14 @@ export default class AreaOfWorkStore {
     } catch (error) {
       console.log(error);
       this.setIsLoadingInitial(false);
+    }
+  };
+
+  createAreaOfWork = async (areaOfWork: AreaOfWorkFormValues) => {
+    try {
+      await agent.AreaOfWorkRequests.create(areaOfWork);
+    } catch (error) {
+      console.log(error);
     }
   };
 

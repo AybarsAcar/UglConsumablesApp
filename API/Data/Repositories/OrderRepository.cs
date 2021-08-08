@@ -23,15 +23,17 @@ namespace API.Data.Repositories
     {
       if (serviceOrderId == null)
       {
-        return await _context.Orders.ToListAsync();
+        return await _context.Orders.Include(o => o.OrderItems).ToListAsync();
       }
 
-      return await _context.Orders.Where(o => o.ServiceOrderId == serviceOrderId).ToListAsync();
+      return await _context.Orders.Include(o => o.OrderItems)
+        .Where(o => o.ServiceOrderId == serviceOrderId)
+        .ToListAsync();
     }
 
     public async Task<Order> GetOrderByIdAsync(int id)
     {
-      return await _context.Orders.FindAsync(id);
+      return await _context.Orders.Include(o => o.OrderItems).FirstOrDefaultAsync(o => o.Id == id);
     }
 
     public async Task CreateOrderAsync(Order order)
