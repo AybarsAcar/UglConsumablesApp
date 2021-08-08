@@ -122,6 +122,9 @@ namespace API.Data.Migrations
                     b.Property<bool>("IsSite")
                         .HasColumnType("boolean");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
                     b.Property<int>("SapId")
                         .HasColumnType("integer");
 
