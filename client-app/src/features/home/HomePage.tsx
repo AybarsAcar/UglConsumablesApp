@@ -1,4 +1,5 @@
 import { observer } from 'mobx-react-lite';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Button,
@@ -13,7 +14,11 @@ import LoginForm from '../account/LoginForm';
 import RegisterForm from '../account/RegisterForm';
 
 function HomePage() {
-  const { accountStore, modalStore } = useStore();
+  const { accountStore, modalStore, commonStore } = useStore();
+
+  useEffect(() => {
+    accountStore.getUser();
+  }, [accountStore]);
 
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
@@ -28,7 +33,7 @@ function HomePage() {
           style={{ position: 'absolute', right: '2%', bottom: '2%' }}
         />
 
-        {accountStore.isLoggedIn ? (
+        {commonStore.isAppLoaded && accountStore.isLoggedIn ? (
           <>
             <Header
               as="h2"

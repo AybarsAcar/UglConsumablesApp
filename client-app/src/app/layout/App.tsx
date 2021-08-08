@@ -9,6 +9,7 @@ import ConsumableDashboard from '../../features/dashboard/ConsumableDashboard';
 import NotFound from '../../features/errors/NotFound';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
+import ConsumableForm from '../../features/consumables/ConsumableForm';
 
 function App() {
   // get the location so we can re-render the component as the route changes
@@ -42,6 +43,18 @@ function App() {
                   exact
                   path="/consumables"
                   component={ConsumableDashboard}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/create/consumable"
+                  component={ConsumableForm}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/edit/consumable/:sapId"
+                  component={ConsumableForm}
                 />
 
                 {/* NOT FOUND PAGE - This is a fallback page when the route is not found */}

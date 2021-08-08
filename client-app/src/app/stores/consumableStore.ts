@@ -4,7 +4,11 @@
 
 import { makeAutoObservable } from 'mobx';
 import agent from '../api/agent';
-import { Consumable } from '../models/consumable';
+import {
+  Consumable,
+  ConsumableFormValues,
+  ConsumableSubmitValues,
+} from '../models/consumable';
 
 export default class ConsumableStore {
   public consumableRegistry = new Map<number, Consumable>();
@@ -57,8 +61,18 @@ export default class ConsumableStore {
     }
   };
 
+  addToServiceOrder = async (sapId: number, serviceOrderId: number) => {};
+
+  createConsumable = async (consumable: ConsumableSubmitValues) => {
+    try {
+      await agent.ConsumableRequests.create(consumable);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   loadConsumable = async (sapId: number) => {
-    throw new Error('Method not implemented.');
+    // TODO
   };
 
   setIsLoadingInitial = (state: boolean) => {

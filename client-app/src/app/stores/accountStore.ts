@@ -16,7 +16,7 @@ export default class AccountStore {
   }
 
   get isLoggedIn() {
-    return this.user != null;
+    return !!this.user;
   }
 
   getUser = async () => {
