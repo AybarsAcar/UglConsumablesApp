@@ -14,7 +14,7 @@ namespace API.Extensions
   {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
-      services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "API", Version = "v1"}); });
+      services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" }); });
 
       services.AddDbContext<DataContext>(opt => { opt.UseNpgsql(config.GetConnectionString("DefaultConnection")); });
 
@@ -38,8 +38,8 @@ namespace API.Extensions
 
       // repositories
       services.AddScoped<IUnitOfWork, UnitOfWork>();
-      
-      
+
+
       return services;
     }
   }

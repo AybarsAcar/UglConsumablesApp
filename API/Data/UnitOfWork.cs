@@ -1,11 +1,7 @@
 using System.Threading.Tasks;
 using API.Data.Repositories;
-using API.Entities;
 using API.Interfaces;
-using API.Services;
 using AutoMapper;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 
 namespace API.Data
 {
@@ -23,6 +19,7 @@ namespace API.Data
     public IConsumableRepository ConsumableRepository => new ConsumableRepository(_context, _mapper);
     public IAreaOfWorkRepository AreaOfWorkRepository => new AreaOfWorkRepository(_context, _mapper);
     public IUserRepository UserRepository => new UserRepository(_context, _mapper);
+    public IOrderRepository OrderRepository => new OrderRepository(_context, _mapper);
 
     public async Task<bool> Complete()
     {

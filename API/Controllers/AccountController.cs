@@ -2,6 +2,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using API.DTOs.Account;
 using API.Entities;
+using API.Entities.Account;
 using API.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

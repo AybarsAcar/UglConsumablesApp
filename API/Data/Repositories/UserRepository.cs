@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Entities;
+using API.Entities.Account;
 using API.Interfaces;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;

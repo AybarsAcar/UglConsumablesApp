@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Entities;
+using API.Entities.Account;
 
 namespace API.Interfaces
 {

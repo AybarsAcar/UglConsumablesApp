@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using API.Entities;
+using API.Entities.Account;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 

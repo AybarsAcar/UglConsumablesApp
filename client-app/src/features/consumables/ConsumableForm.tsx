@@ -11,8 +11,6 @@ import MyTextInput from '../../app/common/forms/MyTextInput';
 import MyTextArea from '../../app/common/forms/MyTextArea';
 import MySelectInput from '../../app/common/forms/MySelectInput';
 import { Link } from 'react-router-dom';
-import { AreaOfWork } from '../../app/models/areaOfWork';
-import { count } from 'console';
 
 const unitOfMeasureOptions = [
   { text: 'EA', value: 'EA' },

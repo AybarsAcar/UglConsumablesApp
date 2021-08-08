@@ -2,6 +2,7 @@ using System;
 using System.Text;
 using API.Data;
 using API.Entities;
+using API.Entities.Account;
 using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;

@@ -41,9 +41,9 @@ namespace API.Controllers
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public async Task<List<AreaOfWork>> GetAreaOfWorks()
+    public async Task<ActionResult<List<AreaOfWorkDto>>> GetAreaOfWorks()
     {
-      return await _unit.AreaOfWorkRepository.GetAreaOfWorksAsync();
+      return Ok(_mapper.Map<List<AreaOfWorkDto>>(await _unit.AreaOfWorkRepository.GetAreaOfWorksAsync()));
     }
 
     /// <summary>

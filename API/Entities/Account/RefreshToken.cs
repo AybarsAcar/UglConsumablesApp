@@ -1,6 +1,6 @@
 using System;
 
-namespace API.Entities
+namespace API.Entities.Account
 {
   /// <summary>
   /// refresh token is stored in the db
