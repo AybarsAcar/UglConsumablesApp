@@ -1,10 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace API.DTOs
 {
   public class AreaOfWorkDto
   {
-    [Required] public string Description { get; set; }
-    [Required] public int ServiceOrder { get; set; }
+    public int Id { get; set; }
+    public string Description { get; set; }
+    public int ServiceOrder { get; set; }
   }
 }

@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210808030602_QuantityColumnAdded")]
-    partial class QuantityColumnAdded
+    [Migration("20210808052505_JoinTableAdded")]
+    partial class JoinTableAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -95,9 +95,6 @@ namespace API.Data.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int?>("ConsumableId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
@@ -105,8 +102,6 @@ namespace API.Data.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ConsumableId");
 
                     b.ToTable("AreaOfWorks");
                 });
@@ -162,6 +157,21 @@ namespace API.Data.Migrations
                     b.HasIndex("AppUserId");
 
                     b.ToTable("RefreshToken");
+                });
+
+            modelBuilder.Entity("AreaOfWorkConsumable", b =>
+                {
+                    b.Property<int>("AreaOfWorksId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ConsumablesId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("AreaOfWorksId", "ConsumablesId");
+
+                    b.HasIndex("ConsumablesId");
+
+                    b.ToTable("AreaOfWorkConsumable");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -294,13 +304,6 @@ namespace API.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("API.Entities.AreaOfWork", b =>
-                {
-                    b.HasOne("API.Entities.Consumable", null)
-                        .WithMany("AreaOfWorks")
-                        .HasForeignKey("ConsumableId");
-                });
-
             modelBuilder.Entity("API.Entities.RefreshToken", b =>
                 {
                     b.HasOne("API.Entities.AppUser", "AppUser")
@@ -308,6 +311,21 @@ namespace API.Data.Migrations
                         .HasForeignKey("AppUserId");
 
                     b.Navigation("AppUser");
+                });
+
+            modelBuilder.Entity("AreaOfWorkConsumable", b =>
+                {
+                    b.HasOne("API.Entities.AreaOfWork", null)
+                        .WithMany()
+                        .HasForeignKey("AreaOfWorksId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("API.Entities.Consumable", null)
+                        .WithMany()
+                        .HasForeignKey("ConsumablesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -364,11 +382,6 @@ namespace API.Data.Migrations
             modelBuilder.Entity("API.Entities.AppUser", b =>
                 {
                     b.Navigation("RefreshTokens");
-                });
-
-            modelBuilder.Entity("API.Entities.Consumable", b =>
-                {
-                    b.Navigation("AreaOfWorks");
                 });
 #pragma warning restore 612, 618
         }

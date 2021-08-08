@@ -9,7 +9,7 @@ namespace API.Helpers
     public AutoMapperProfiles()
     {
       // from -> to
-      CreateMap<CreateConsumableDto, Consumable>();
+      CreateMap<ConsumableCreateDto, Consumable>();
     }
   }
 }

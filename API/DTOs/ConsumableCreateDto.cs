@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using API.Entities;
 
 namespace API.DTOs
 {
-  public class CreateConsumableDto
+  public class ConsumableCreateDto
   {
     [Required] public int SapId { get; set; }
     [Required] public string Description { get; set; }

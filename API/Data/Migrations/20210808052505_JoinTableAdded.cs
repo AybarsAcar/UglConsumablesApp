@@ -4,10 +4,24 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace API.Data.Migrations
 {
-    public partial class RelationshipDirectionChanged : Migration
+    public partial class JoinTableAdded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "AreaOfWorks",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    ServiceOrder = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AreaOfWorks", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -57,7 +71,8 @@ namespace API.Data.Migrations
                     SapId = table.Column<int>(type: "integer", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: true),
                     UnitOfMeasure = table.Column<string>(type: "text", nullable: true),
-                    IsSite = table.Column<bool>(type: "boolean", nullable: false)
+                    IsSite = table.Column<bool>(type: "boolean", nullable: false),
+                    Quantity = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -193,30 +208,33 @@ namespace API.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AreaOfWorks",
+                name: "AreaOfWorkConsumable",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    ServiceOrder = table.Column<int>(type: "integer", nullable: false),
-                    ConsumableId = table.Column<int>(type: "integer", nullable: true)
+                    AreaOfWorksId = table.Column<int>(type: "integer", nullable: false),
+                    ConsumablesId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AreaOfWorks", x => x.Id);
+                    table.PrimaryKey("PK_AreaOfWorkConsumable", x => new { x.AreaOfWorksId, x.ConsumablesId });
                     table.ForeignKey(
-                        name: "FK_AreaOfWorks_Consumables_ConsumableId",
-                        column: x => x.ConsumableId,
+                        name: "FK_AreaOfWorkConsumable_AreaOfWorks_AreaOfWorksId",
+                        column: x => x.AreaOfWorksId,
+                        principalTable: "AreaOfWorks",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AreaOfWorkConsumable_Consumables_ConsumablesId",
+                        column: x => x.ConsumablesId,
                         principalTable: "Consumables",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_AreaOfWorks_ConsumableId",
-                table: "AreaOfWorks",
-                column: "ConsumableId");
+                name: "IX_AreaOfWorkConsumable_ConsumablesId",
+                table: "AreaOfWorkConsumable",
+                column: "ConsumablesId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -264,7 +282,7 @@ namespace API.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AreaOfWorks");
+                name: "AreaOfWorkConsumable");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
@@ -283,6 +301,9 @@ namespace API.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "RefreshToken");
+
+            migrationBuilder.DropTable(
+                name: "AreaOfWorks");
 
             migrationBuilder.DropTable(
                 name: "Consumables");
