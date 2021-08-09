@@ -4,7 +4,7 @@ import { Container, Item } from 'semantic-ui-react';
 import { useStore } from '../../app/stores/store';
 
 function AreaOfWorkSelection() {
-  const { tabStore, areaOfWorkStore } = useStore();
+  const { tabStore, areaOfWorkStore, orderStore } = useStore();
 
   useEffect(() => {
     if (areaOfWorkStore.areaOfWorks.length <= 0) {
@@ -25,6 +25,9 @@ function AreaOfWorkSelection() {
                   as="a"
                   onClick={() => {
                     areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
+                    orderStore.orderToCreate.serviceOrder =
+                      areaOfWork.serviceOrder;
+
                     tabStore.setActiveTab(2);
                   }}
                   content={areaOfWork.description}

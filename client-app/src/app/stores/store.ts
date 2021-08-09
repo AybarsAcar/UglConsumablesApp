@@ -4,6 +4,7 @@ import AreaOfWorkStore from './areaOfWorkStore';
 import CommonStore from './commonStore';
 import ConsumableStore from './consumableStore';
 import { ModalStore } from './modalStore';
+import OrderStore from './orderStore';
 import TabStore from './tabStore';
 
 interface Store {
@@ -13,6 +14,7 @@ interface Store {
   modalStore: ModalStore;
   tabStore: TabStore;
   areaOfWorkStore: AreaOfWorkStore;
+  orderStore: OrderStore;
 }
 
 export const store: Store = {
@@ -22,6 +24,7 @@ export const store: Store = {
   modalStore: new ModalStore(),
   tabStore: new TabStore(),
   areaOfWorkStore: new AreaOfWorkStore(),
+  orderStore: new OrderStore(),
 };
 
 export const StoreContext = createContext(store);

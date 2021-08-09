@@ -6,6 +6,7 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { Consumable, ConsumableFormValues } from '../models/consumable';
+import Order, { OrderFormValues } from '../models/order';
 import {
   AccountLoginValues,
   AccountRegisterValues,
@@ -148,6 +149,18 @@ const AccountRequests = {
     requests.post<User>('/account/login', user),
 };
 
-const agent = { ConsumableRequests, AreaOfWorkRequests, AccountRequests };
+const OrderRequests = {
+  list: (serviceOrderId: number) =>
+    requests.get<Order[]>(`/order?serviceOrderId=${serviceOrderId}`),
+  details: (orderId: number) => requests.get<Order>(`/order/${orderId}`),
+  create: (order: OrderFormValues) => requests.post<void>('/order', order),
+};
+
+const agent = {
+  ConsumableRequests,
+  AreaOfWorkRequests,
+  AccountRequests,
+  OrderRequests,
+};
 
 export default agent;

@@ -4,7 +4,7 @@ import { Button, Divider, Form, Loader, Table } from 'semantic-ui-react';
 import { useStore } from '../../app/stores/store';
 
 function ConfirmConsumablesTable() {
-  const { tabStore } = useStore();
+  const { tabStore, orderStore } = useStore();
 
   if (tabStore.activeTabIndex !== 3) return <></>;
 
@@ -56,6 +56,12 @@ function ConfirmConsumablesTable() {
       <Button
         onClick={() => tabStore.setActiveTab(2)}
         content="Back"
+        floated="left"
+        color="red"
+      />
+      <Button
+        onClick={() => console.log(orderStore.orderToCreate)}
+        content="Log the order"
         floated="left"
         color="red"
       />
