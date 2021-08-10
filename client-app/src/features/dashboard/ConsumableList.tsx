@@ -35,13 +35,6 @@ function ConsumableList() {
       />
 
       <Button
-        onClick={() => console.log(orderStore.orderToCreate)}
-        content="Log the order"
-        floated="left"
-        color="red"
-      />
-
-      <Button
         onClick={() => {
           orderStore.orderToCreate.orderItems = [];
           // set the order items

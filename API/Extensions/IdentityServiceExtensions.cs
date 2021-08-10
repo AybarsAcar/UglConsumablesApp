@@ -3,6 +3,8 @@ using System.Text;
 using API.Data;
 using API.Entities;
 using API.Entities.Account;
+using API.Interfaces;
+using API.Security;
 using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -43,6 +45,7 @@ namespace API.Extensions
       services.AddAuthorization(opt => { opt.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin")); });
 
       services.AddScoped<TokenService>();
+      services.AddScoped<IUserAccessor, UserAccessor>();
 
       return services;
     }

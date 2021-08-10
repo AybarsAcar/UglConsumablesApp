@@ -10,7 +10,7 @@ interface Props {
 }
 
 function ConsumableListItem({ consumable }: Props) {
-  const { orderStore, consumableStore } = useStore();
+  const { orderStore } = useStore();
 
   const [quantity, setQuantity] = useState(0);
 

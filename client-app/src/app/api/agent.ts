@@ -4,6 +4,8 @@
 //
 
 import axios, { AxiosError, AxiosResponse } from 'axios';
+import { toast } from 'react-toastify';
+import { history } from '../..';
 import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { Consumable, ConsumableFormValues } from '../models/consumable';
 import Order, { OrderFormValues } from '../models/order';
@@ -51,54 +53,54 @@ axios.interceptors.response.use(
 
     console.log(error.response);
 
-    // switch (status) {
-    //   case 400:
-    //     if (typeof data === 'string') {
-    //       // otherwise, other 400 errors so just display the repsonse data from the API
-    //       toast.error(data);
-    //     }
+    switch (status) {
+      case 400:
+        if (typeof data === 'string') {
+          // otherwise, other 400 errors so just display the repsonse data from the API
+          toast.error(data);
+        }
 
-    //     if (config.method === 'get' && data.errors.hasOwnProperty('id')) {
-    //       // bad guid validation
-    //       history.push('/not-found');
-    //     }
+        if (config.method === 'get' && data.errors.hasOwnProperty('id')) {
+          // bad guid validation
+          history.push('/not-found');
+        }
 
-    //     if (data.errors) {
-    //       // we have the errors object available - form validation error
+        if (data.errors) {
+          // we have the errors object available - form validation error
 
-    //       const modalStateErrors = [];
+          const modalStateErrors = [];
 
-    //       for (const key in data.errors) {
-    //         if (data.errors[key]) {
-    //           modalStateErrors.push(data.errors[key]);
-    //         }
-    //       }
-    //       throw modalStateErrors.flat();
-    //     }
+          for (const key in data.errors) {
+            if (data.errors[key]) {
+              modalStateErrors.push(data.errors[key]);
+            }
+          }
+          throw modalStateErrors.flat();
+        }
 
-    //     break;
+        break;
 
-    //   case 401:
-    //     if (
-    //       status === 401 &&
-    //       headers['www-authenticate']?.startsWith(
-    //         'Bearer error="invalid_token"'
-    //       )
-    //     ) {
-    //       store.userStore.logout();
-    //       toast.error('Session expired, please login again');
-    //     }
-    //     break;
+      case 401:
+        if (
+          status === 401 &&
+          headers['www-authenticate']?.startsWith(
+            'Bearer error="invalid_token"'
+          )
+        ) {
+          store.accountStore.logout();
+          toast.error('Session expired, please login again');
+        }
+        break;
 
-    //   case 404:
-    //     history.push('/not-found');
-    //     break;
+      case 404:
+        history.push('/not-found');
+        break;
 
-    //   case 500:
-    //     store.commonStore.setServerError(data);
-    //     history.push('/server-error');
-    //     break;
-    // }
+      case 500:
+        store.commonStore.setServerError(data);
+        history.push('/server-error');
+        break;
+    }
     return Promise.reject;
   }
 );

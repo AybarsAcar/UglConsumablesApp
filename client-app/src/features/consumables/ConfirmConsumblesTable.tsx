@@ -1,19 +1,21 @@
 import { observer } from 'mobx-react-lite';
 import { ChangeEvent, useState } from 'react';
 import { Button, Divider, Form, Table } from 'semantic-ui-react';
+import { OrderFormValues } from '../../app/models/order';
 import { useStore } from '../../app/stores/store';
 
 function ConfirmConsumablesTable() {
   const { tabStore, orderStore } = useStore();
 
   const [comment, setComment] = useState('');
+  const [order, setOrder] = useState<OrderFormValues>(orderStore.orderToCreate);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     // add the comment to the order object
-    orderStore.orderToCreate.comment = comment;
+    order.comment = comment;
 
     // make the request
-    console.log(orderStore.orderToCreate);
+    await orderStore.confirmOrder(order);
   };
 
   if (tabStore.activeTabIndex !== 3) return <></>;
@@ -31,7 +33,7 @@ function ConfirmConsumablesTable() {
 
         <Table.Body>
           {orderStore.orderToCreate.orderItems.map((orderItem) => (
-            <Table.Row key={orderItem.id}>
+            <Table.Row key={orderItem.sapId}>
               <Table.Cell>{orderItem.sapId}</Table.Cell>
               <Table.Cell>{orderItem.description}</Table.Cell>
               <Table.Cell>{orderItem.quantity}</Table.Cell>
@@ -59,12 +61,6 @@ function ConfirmConsumablesTable() {
       <Button
         onClick={() => tabStore.setActiveTab(2)}
         content="Back"
-        floated="left"
-        color="red"
-      />
-      <Button
-        onClick={() => console.log(orderStore.orderToCreate)}
-        content="Log the order"
         floated="left"
         color="red"
       />

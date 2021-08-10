@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using API.DTOs.Account;
 using API.Entities;
 using API.Entities.Account;
+using API.Interfaces;
 using API.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -20,13 +21,15 @@ namespace API.Controllers
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly TokenService _tokenService;
+    private readonly IUserAccessor _userAccessor;
 
     public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
-      TokenService tokenService)
+      TokenService tokenService, IUserAccessor userAccessor)
     {
       _userManager = userManager;
       _signInManager = signInManager;
       _tokenService = tokenService;
+      _userAccessor = userAccessor;
     }
 
     /// <summary>
@@ -109,9 +112,16 @@ namespace API.Controllers
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public async Task<UserDto> GetCurrentUser()
+    public async Task<ActionResult<UserDto>> GetCurrentUser()
     {
-      var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Email == User.FindFirstValue(ClaimTypes.Email));
+      var username =  _userAccessor.GetUsername();
+
+      if (username == null)
+      {
+        return Unauthorized();
+      }
+      
+      var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == username);
 
       return new UserDto
       {

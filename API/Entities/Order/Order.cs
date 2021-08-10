@@ -11,6 +11,8 @@ namespace API.Entities.Order
     public int ServiceOrderId { get; set; }
     public string AreaOfWorkDescription { get; set; }
     public string Comment { get; set; }
+
+    public string CreatedBy { get; set; }
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
   }
 }

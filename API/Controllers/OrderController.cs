@@ -13,11 +13,13 @@ namespace API.Controllers
   {
     private readonly IUnitOfWork _unit;
     private readonly IMapper _mapper;
+    private readonly IUserAccessor _userAccessor;
 
-    public OrderController(IUnitOfWork unit, IMapper mapper)
+    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor)
     {
       _unit = unit;
       _mapper = mapper;
+      _userAccessor = userAccessor;
     }
 
     [HttpGet]
@@ -35,6 +37,10 @@ namespace API.Controllers
     [HttpPost]
     public async Task<IActionResult> CreateOrder(Order order)
     {
+      // get the user from the token
+      var username = _userAccessor.GetUsername();
+      order.CreatedBy = username;
+      
       await _unit.OrderRepository.CreateOrderAsync(order);
 
       if (await _unit.Complete())

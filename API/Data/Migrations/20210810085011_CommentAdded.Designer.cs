@@ -3,15 +3,17 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210810085011_CommentAdded")]
+    partial class CommentAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -170,15 +172,38 @@ namespace API.Data.Migrations
                     b.Property<string>("Comment")
                         .HasColumnType("text");
 
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("text");
-
                     b.Property<int>("ServiceOrderId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("API.Entities.Order.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SapId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("AreaOfWorkConsumable", b =>
@@ -335,36 +360,11 @@ namespace API.Data.Migrations
                     b.Navigation("AppUser");
                 });
 
-            modelBuilder.Entity("API.Entities.Order.Order", b =>
+            modelBuilder.Entity("API.Entities.Order.OrderItem", b =>
                 {
-                    b.OwnsMany("API.Entities.Order.OrderItem", "OrderItems", b1 =>
-                        {
-                            b1.Property<int>("OrderId")
-                                .HasColumnType("integer");
-
-                            b1.Property<int>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("integer")
-                                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                            b1.Property<string>("Description")
-                                .HasColumnType("text");
-
-                            b1.Property<int>("Quantity")
-                                .HasColumnType("integer");
-
-                            b1.Property<int>("SapId")
-                                .HasColumnType("integer");
-
-                            b1.HasKey("OrderId", "Id");
-
-                            b1.ToTable("OrderItem");
-
-                            b1.WithOwner()
-                                .HasForeignKey("OrderId");
-                        });
-
-                    b.Navigation("OrderItems");
+                    b.HasOne("API.Entities.Order.Order", null)
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId");
                 });
 
             modelBuilder.Entity("AreaOfWorkConsumable", b =>
@@ -436,6 +436,11 @@ namespace API.Data.Migrations
             modelBuilder.Entity("API.Entities.Account.AppUser", b =>
                 {
                     b.Navigation("RefreshTokens");
+                });
+
+            modelBuilder.Entity("API.Entities.Order.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

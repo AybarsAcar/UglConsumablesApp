@@ -1,4 +1,5 @@
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable, runInAction } from 'mobx';
+import { history } from '../..';
 import agent from '../api/agent';
 import { OrderFormValues, OrderItem } from '../models/order';
 
@@ -25,9 +26,29 @@ export default class OrderStore {
     }
   };
 
-  setServiceOrder = async (serviceOrder: number) => {
+  setServiceOrder = async (
+    serviceOrder: number,
+    areaOfWorkDescription: string
+  ) => {
     this.orderToCreate.serviceOrderId = serviceOrder;
+    this.orderToCreate.areaOfWorkDescription = areaOfWorkDescription;
+  };
 
+  confirmOrder = async (order: OrderFormValues) => {
     this.isLoading = true;
+    try {
+      await agent.OrderRequests.create(order);
+
+      runInAction(() => {
+        this.isLoading = false;
+        this.orderToCreate = new OrderFormValues();
+        this.orderItemsToAdd = new Map<number, OrderItem>();
+      });
+
+      history.push('/');
+    } catch (error) {
+      console.log(error);
+      this.isLoading = false;
+    }
   };
 }

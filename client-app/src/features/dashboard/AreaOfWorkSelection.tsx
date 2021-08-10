@@ -27,6 +27,8 @@ function AreaOfWorkSelection() {
                     areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
                     orderStore.orderToCreate.serviceOrderId =
                       areaOfWork.serviceOrder;
+                    orderStore.orderToCreate.areaOfWorkDescription =
+                      areaOfWork.description;
 
                     tabStore.setActiveTab(2);
                   }}

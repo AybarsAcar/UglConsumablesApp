@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history';
 import { Router } from 'react-router';
 
 import 'semantic-ui-css/semantic.min.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 import './app/layout/styles.css';
 
 export const history = createBrowserHistory();
