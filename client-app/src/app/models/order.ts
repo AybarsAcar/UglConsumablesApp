@@ -25,14 +25,14 @@ export class OrderItem {
 }
 
 export class OrderFormValues {
-  serviceOrder: number | undefined;
+  serviceOrderId: number | undefined;
   areaOfWorkDescription: string = '';
   comment: string = '';
   orderItems: OrderItem[] = [];
 
   constructor(order?: OrderFormValues) {
     if (order) {
-      this.serviceOrder = order.serviceOrder;
+      this.serviceOrderId = order.serviceOrderId;
       this.areaOfWorkDescription = order.areaOfWorkDescription;
       this.comment = order.comment;
       this.orderItems = order.orderItems;

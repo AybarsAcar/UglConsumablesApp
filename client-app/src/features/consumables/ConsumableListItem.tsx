@@ -2,6 +2,7 @@ import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
 import { Button, ButtonGroup, Icon, Input, Table } from 'semantic-ui-react';
 import { Consumable } from '../../app/models/consumable';
+import { OrderItem } from '../../app/models/order';
 import { useStore } from '../../app/stores/store';
 
 interface Props {
@@ -18,11 +19,14 @@ function ConsumableListItem({ consumable }: Props) {
 
     if (orderStore.orderItemsToAdd.has(consumable.sapId)) {
       // already exists
-      var val = orderStore.orderItemsToAdd.get(consumable.sapId)!;
-      orderStore.orderItemsToAdd.set(consumable.sapId, val + 1);
+      var orderItem = orderStore.orderItemsToAdd.get(consumable.sapId)!;
+      orderItem.quantity++;
     } else {
       // create entry
-      orderStore.orderItemsToAdd.set(consumable.sapId, 1);
+      var orderItem = new OrderItem(consumable);
+      orderItem.quantity = 1;
+
+      orderStore.orderItemsToAdd.set(orderItem.sapId, orderItem);
     }
   };
   const handleRemoveFromOrder = () => {
@@ -30,8 +34,9 @@ function ConsumableListItem({ consumable }: Props) {
 
     setQuantity(quantity - 1);
 
-    var val = orderStore.orderItemsToAdd.get(consumable.sapId)!;
-    orderStore.orderItemsToAdd.set(consumable.sapId, val - 1);
+    var orderItem = orderStore.orderItemsToAdd.get(consumable.sapId)!;
+
+    orderItem.quantity--;
   };
 
   return (

@@ -25,7 +25,7 @@ function AreaOfWorkSelection() {
                   as="a"
                   onClick={() => {
                     areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
-                    orderStore.orderToCreate.serviceOrder =
+                    orderStore.orderToCreate.serviceOrderId =
                       areaOfWork.serviceOrder;
 
                     tabStore.setActiveTab(2);

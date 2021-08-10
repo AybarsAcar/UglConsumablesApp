@@ -1,13 +1,13 @@
 import { makeAutoObservable } from 'mobx';
 import agent from '../api/agent';
-import { OrderFormValues } from '../models/order';
+import { OrderFormValues, OrderItem } from '../models/order';
 
 export default class OrderStore {
   isLoading = false;
 
   orderToCreate: OrderFormValues = new OrderFormValues();
 
-  orderItemsToAdd = new Map<number, number>();
+  orderItemsToAdd = new Map<number, OrderItem>();
 
   constructor() {
     makeAutoObservable(this);
@@ -26,7 +26,7 @@ export default class OrderStore {
   };
 
   setServiceOrder = async (serviceOrder: number) => {
-    this.orderToCreate.serviceOrder = serviceOrder;
+    this.orderToCreate.serviceOrderId = serviceOrder;
 
     this.isLoading = true;
   };

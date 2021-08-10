@@ -1,10 +1,20 @@
-import { Field, FieldProps, Formik } from 'formik';
 import { observer } from 'mobx-react-lite';
-import { Button, Divider, Form, Loader, Table } from 'semantic-ui-react';
+import { ChangeEvent, useState } from 'react';
+import { Button, Divider, Form, Table } from 'semantic-ui-react';
 import { useStore } from '../../app/stores/store';
 
 function ConfirmConsumablesTable() {
   const { tabStore, orderStore } = useStore();
+
+  const [comment, setComment] = useState('');
+
+  const handleSubmit = () => {
+    // add the comment to the order object
+    orderStore.orderToCreate.comment = comment;
+
+    // make the request
+    console.log(orderStore.orderToCreate);
+  };
 
   if (tabStore.activeTabIndex !== 3) return <></>;
 
@@ -19,37 +29,30 @@ function ConfirmConsumablesTable() {
           </Table.Row>
         </Table.Header>
 
-        <Table.Body></Table.Body>
+        <Table.Body>
+          {orderStore.orderToCreate.orderItems.map((orderItem) => (
+            <Table.Row key={orderItem.id}>
+              <Table.Cell>{orderItem.sapId}</Table.Cell>
+              <Table.Cell>{orderItem.description}</Table.Cell>
+              <Table.Cell>{orderItem.quantity}</Table.Cell>
+            </Table.Row>
+          ))}
+        </Table.Body>
       </Table>
 
       <Divider horizontal>Comments</Divider>
-      <Formik
-        onSubmit={(values, { resetForm }) =>
-          // commentStore.addComments(values).then(() => resetForm())
-          console.log('submitted')
-        }
-        initialValues={{ body: '' }}
-        // validationSchema={Yup.object({
-        //   body: Yup.string().required(),
-        // })}
-      >
-        {({ isSubmitting, isValid, dirty, handleSubmit }) => (
-          <Form className="ui form">
-            <Field name="body">
-              {(props: FieldProps) => (
-                <div style={{ position: 'relative' }}>
-                  <Loader active={isSubmitting} />
-                  <textarea
-                    placeholder="Enter your comment (Press Enter for a new line)"
-                    rows={2}
-                    {...props.field}
-                  />
-                </div>
-              )}
-            </Field>
-          </Form>
-        )}
-      </Formik>
+
+      <Form className="ui form">
+        <textarea
+          onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+            setComment(e.target.value)
+          }
+          name="comment"
+          value={comment}
+          placeholder="Enter your comment (Press Enter for a new line)"
+          rows={4}
+        />
+      </Form>
 
       <Divider />
 
@@ -67,7 +70,11 @@ function ConfirmConsumablesTable() {
       />
 
       <Button
-        onClick={() => tabStore.setActiveTab(3)}
+        loading={false}
+        type="button"
+        onClick={() => {
+          handleSubmit();
+        }}
         icon="check"
         labelPosition="right"
         content="Confirm Order"
