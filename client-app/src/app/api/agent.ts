@@ -8,7 +8,8 @@ import { toast } from 'react-toastify';
 import { history } from '../..';
 import { AreaOfWork, AreaOfWorkFormValues } from '../models/areaOfWork';
 import { Consumable, ConsumableFormValues } from '../models/consumable';
-import Order, { OrderFormValues } from '../models/order';
+import { OrderListItem } from '../models/order';
+import { Order, OrderFormValues } from '../models/order';
 import {
   AccountLoginValues,
   AccountRegisterValues,
@@ -152,8 +153,7 @@ const AccountRequests = {
 };
 
 const OrderRequests = {
-  list: (serviceOrderId: number) =>
-    requests.get<Order[]>(`/order?serviceOrderId=${serviceOrderId}`),
+  list: (serviceOrderId?: number) => requests.get<OrderListItem[]>(`/order`),
   details: (orderId: number) => requests.get<Order>(`/order/${orderId}`),
   create: (order: OrderFormValues) => requests.post<void>('/order', order),
 };

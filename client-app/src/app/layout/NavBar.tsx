@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import { Link, NavLink } from 'react-router-dom';
-import { Container, Dropdown, Menu } from 'semantic-ui-react';
+import { Container, Divider, Dropdown, Menu } from 'semantic-ui-react';
 import { useStore } from '../stores/store';
 
 function NavBar() {
@@ -24,8 +24,15 @@ function NavBar() {
             />
             <Menu.Item as={NavLink} exact to="/errors" name="Errors" />
             <Menu.Item>
-              <Dropdown pointing="top left" text="Create">
+              <Dropdown pointing="top left" text="Admin">
                 <Dropdown.Menu>
+                  <Dropdown.Item
+                    as={Link}
+                    to={`/admin/orders`}
+                    text="Orders Dashboard"
+                    icon="th list"
+                  />
+                  <Divider />
                   <Dropdown.Item
                     as={Link}
                     to={`/create/areaOfWork`}

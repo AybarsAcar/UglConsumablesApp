@@ -1,10 +1,20 @@
 import { Consumable } from './consumable';
 
-export default interface Order {
+export interface OrderListItem {
+  id: number;
+  serviceOrderId: number;
+  areaOfWorkDescription: string;
+  createdBy: string;
+  createdAt: Date;
+}
+
+export interface Order {
   id: number;
   serviceOrderId: number;
   areaOfWorkDescription: string;
   comment: string;
+  createdBy: string;
+  createdAt: Date;
   orderItems: OrderItem[];
 }
 

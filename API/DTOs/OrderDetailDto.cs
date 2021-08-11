@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Generic;
+using API.Entities.Order;
 
-namespace API.Entities.Order
+namespace API.DTOs
 {
-  /// <summary>
-  /// has its own table
-  /// </summary>
-  public class Order
+  public class OrderDetailDto
   {
     public int Id { get; set; }
     public int ServiceOrderId { get; set; }
@@ -14,7 +12,7 @@ namespace API.Entities.Order
     public string Comment { get; set; }
 
     public string CreatedBy { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; }
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
   }
 }

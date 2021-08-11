@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using API.DTOs;
 using API.Entities.Order;
 using API.Interfaces;
 using AutoMapper;
@@ -23,15 +24,15 @@ namespace API.Controllers
     }
 
     [HttpGet]
-    public async Task<ActionResult<List<Order>>> GetOrders([FromQuery] int? serviceOrderId)
+    public async Task<ActionResult<List<OrderDto>>> GetOrders([FromQuery] int? serviceOrderId)
     {
-      return Ok(await _unit.OrderRepository.GetOrdersAsync(serviceOrderId));
+      return Ok(_mapper.Map<List<OrderDto>>(await _unit.OrderRepository.GetOrdersAsync(serviceOrderId)));
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Order>> GetOrderById(int id)
+    public async Task<ActionResult<OrderDetailDto>> GetOrderById(int id)
     {
-      return Ok(await _unit.OrderRepository.GetOrderByIdAsync(id));
+      return Ok(_mapper.Map<OrderDetailDto>(await _unit.OrderRepository.GetOrderByIdAsync(id)));
     }
 
     [HttpPost]

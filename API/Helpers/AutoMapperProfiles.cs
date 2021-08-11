@@ -1,5 +1,6 @@
 using API.DTOs;
 using API.Entities;
+using API.Entities.Order;
 using AutoMapper;
 
 namespace API.Helpers
@@ -14,6 +15,9 @@ namespace API.Helpers
       CreateMap<Consumable, ConsumableDto>();
       
       CreateMap<AreaOfWork, AreaOfWorkDto>();
+
+      CreateMap<Order, OrderDto>();
+      CreateMap<Order, OrderDetailDto>();
     }
   }
 }

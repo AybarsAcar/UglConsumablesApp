@@ -1,9 +1,17 @@
 import { makeAutoObservable, runInAction } from 'mobx';
 import { history } from '../..';
 import agent from '../api/agent';
-import { OrderFormValues, OrderItem } from '../models/order';
+import {
+  OrderListItem,
+  OrderFormValues,
+  OrderItem,
+  Order,
+} from '../models/order';
 
 export default class OrderStore {
+  orders: OrderListItem[] = [];
+  selectedOrder: Order | null = null;
+
   isLoading = false;
 
   orderToCreate: OrderFormValues = new OrderFormValues();
@@ -13,6 +21,23 @@ export default class OrderStore {
   constructor() {
     makeAutoObservable(this);
   }
+
+  loadOrders = async () => {
+    this.isLoading = true;
+
+    try {
+      const result = await agent.OrderRequests.list();
+
+      result.forEach((orderListItem: OrderListItem) => {
+        this.orders.push(orderListItem);
+      });
+
+      this.isLoading = false;
+    } catch (error) {
+      console.log(error);
+      this.isLoading = false;
+    }
+  };
 
   createOrder = async (order: OrderFormValues) => {
     this.isLoading = true;

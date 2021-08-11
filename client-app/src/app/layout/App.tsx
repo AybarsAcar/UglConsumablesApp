@@ -11,6 +11,7 @@ import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import ConsumableForm from '../../features/consumables/ConsumableForm';
 import areaOfWorkForm from '../../features/areaOfWorks/areaOfWorkForm';
+import OrderDashboard from '../../features/order-dashboard/OrderDashboard';
 
 function App() {
   // get the location so we can re-render the component as the route changes
@@ -68,6 +69,12 @@ function App() {
                   exact
                   path="/edit/areaOfWork/:sapId"
                   component={areaOfWorkForm}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/admin/orders"
+                  component={OrderDashboard}
                 />
 
                 {/* NOT FOUND PAGE - This is a fallback page when the route is not found */}
