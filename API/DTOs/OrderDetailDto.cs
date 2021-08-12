@@ -14,5 +14,7 @@ namespace API.DTOs
     public string CreatedBy { get; set; }
     public DateTime CreatedAt { get; set; }
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+    public bool IsClosed { get; set; }
   }
 }

@@ -39,6 +39,21 @@ export default class OrderStore {
     }
   };
 
+  loadOrder = async (id: number) => {
+    this.isLoading = true;
+
+    try {
+      const result = await agent.OrderRequests.details(id);
+
+      this.selectedOrder = result;
+
+      this.isLoading = false;
+    } catch (error) {
+      console.log(error);
+      this.isLoading = false;
+    }
+  };
+
   createOrder = async (order: OrderFormValues) => {
     this.isLoading = true;
 

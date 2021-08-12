@@ -9,5 +9,7 @@ namespace API.DTOs
     public string AreaOfWorkDescription { get; set; }
     public string CreatedBy { get; set; }
     public DateTime CreatedAt { get; set; }
+
+    public bool IsClosed { get; set; }
   }
 }

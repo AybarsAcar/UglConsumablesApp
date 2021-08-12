@@ -176,6 +176,9 @@ namespace API.Data.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsClosed")
+                        .HasColumnType("boolean");
+
                     b.Property<int>("ServiceOrderId")
                         .HasColumnType("integer");
 

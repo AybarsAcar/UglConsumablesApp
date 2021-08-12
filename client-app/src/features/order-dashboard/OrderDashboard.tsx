@@ -1,4 +1,5 @@
 import { observer } from 'mobx-react-lite';
+import moment from 'moment';
 import React from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -15,7 +16,7 @@ function OrderDashboard() {
   }, [orderStore, orderStore.loadOrders]);
 
   return (
-    <Table celled selectable>
+    <Table selectable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>Service Order</Table.HeaderCell>
@@ -32,11 +33,11 @@ function OrderDashboard() {
             <Table.Cell>{order.serviceOrderId}</Table.Cell>
             <Table.Cell>{order.areaOfWorkDescription}</Table.Cell>
             <Table.Cell>{order.createdBy}</Table.Cell>
-            <Table.Cell>{order.createdAt}</Table.Cell>
+            <Table.Cell>{moment(order.createdAt).calendar()}</Table.Cell>
             <Table.Cell>
               <Button
                 floated="right"
-                content="Not Completed"
+                content={!order.isClosed ? 'Not Completed' : 'Completed'}
                 as={Link}
                 to={`/admin/orders/${order.id}`}
               />

@@ -16,5 +16,7 @@ namespace API.Entities.Order
     public string CreatedBy { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+    public bool IsClosed { get; set; } = false;
   }
 }

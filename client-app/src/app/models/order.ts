@@ -6,6 +6,7 @@ export interface OrderListItem {
   areaOfWorkDescription: string;
   createdBy: string;
   createdAt: Date;
+  isClosed: boolean;
 }
 
 export interface Order {
@@ -16,6 +17,7 @@ export interface Order {
   createdBy: string;
   createdAt: Date;
   orderItems: OrderItem[];
+  isClosed: boolean;
 }
 
 export class OrderItem {

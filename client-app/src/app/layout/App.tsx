@@ -12,6 +12,7 @@ import { useEffect } from 'react';
 import ConsumableForm from '../../features/consumables/ConsumableForm';
 import areaOfWorkForm from '../../features/areaOfWorks/areaOfWorkForm';
 import OrderDashboard from '../../features/order-dashboard/OrderDashboard';
+import OrderDetailedPage from '../../features/order-dashboard/OrderDetailedPage';
 
 function App() {
   // get the location so we can re-render the component as the route changes
@@ -75,6 +76,12 @@ function App() {
                   exact
                   path="/admin/orders"
                   component={OrderDashboard}
+                />
+
+                <PrivateRoute
+                  exact
+                  path="/admin/orders/:id"
+                  component={OrderDetailedPage}
                 />
 
                 {/* NOT FOUND PAGE - This is a fallback page when the route is not found */}
