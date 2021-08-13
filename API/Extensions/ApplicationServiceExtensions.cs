@@ -3,6 +3,7 @@ using API.Data.Repositories;
 using API.Entities;
 using API.Helpers;
 using API.Interfaces;
+using API.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,6 +39,9 @@ namespace API.Extensions
 
       // repositories
       services.AddScoped<IUnitOfWork, UnitOfWork>();
+      
+      // email service
+      services.AddScoped<IEmailSender, EmailSender>();
 
 
       return services;

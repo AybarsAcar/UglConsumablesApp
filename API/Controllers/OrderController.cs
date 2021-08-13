@@ -15,12 +15,14 @@ namespace API.Controllers
     private readonly IUnitOfWork _unit;
     private readonly IMapper _mapper;
     private readonly IUserAccessor _userAccessor;
+    private readonly IEmailSender _emailSender;
 
-    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor)
+    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor, IEmailSender emailSender)
     {
       _unit = unit;
       _mapper = mapper;
       _userAccessor = userAccessor;
+      _emailSender = emailSender;
     }
 
     [HttpGet]
@@ -41,15 +43,27 @@ namespace API.Controllers
       // get the user from the token
       var username = _userAccessor.GetUsername();
       order.CreatedBy = username;
-      
+
       await _unit.OrderRepository.CreateOrderAsync(order);
 
-      if (await _unit.Complete())
+      if (!await _unit.Complete())
       {
-        return Ok();
+        return BadRequest("Problem creating the order");
       }
+      
 
-      return BadRequest("Problem creating the order");
+      // send the email to the admin
+      var url = $"http://localhost:3000/admin/orders/{order.Id}";
+
+      var message =
+        $"<p>Please click the link below to verify your email address:</p><p><a href='{url}'>Click to verify email</a></p>";
+
+      // TODO: add admin role and dynamically get it
+      var adminEmail = "aybars.dev@gmail.com";
+
+      await _emailSender.SendEmailAsync(adminEmail, "New Consumable List is Ordered", message);
+
+      return Ok();
     }
   }
 }
