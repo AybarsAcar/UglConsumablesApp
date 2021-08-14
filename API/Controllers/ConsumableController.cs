@@ -38,7 +38,7 @@ namespace API.Controllers
         SapId = dto.SapId,
         Description = dto.Description,
         UnitOfMeasure = dto.UnitOfMeasure,
-        IsSite = dto.IsSite,
+        IsPrd = dto.IsPrd,
         Quantity = 0,
         AreaOfWorks = new List<AreaOfWork>()
       };

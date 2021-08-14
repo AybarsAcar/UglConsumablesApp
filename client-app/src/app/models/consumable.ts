@@ -5,7 +5,7 @@ export interface Consumable {
   sapId: number;
   description: string;
   unitOfMeasure: string;
-  isSite: boolean;
+  isPrd: boolean;
 
   areaOfWorks: AreaOfWork[];
 
@@ -16,7 +16,7 @@ export interface ConsumableSubmitValues {
   sapId: number;
   description: string;
   unitOfMeasure: string;
-  isSite: boolean;
+  isPrd: boolean;
 
   orderQuantity?: number;
 }
@@ -25,7 +25,7 @@ export class ConsumableFormValues {
   sapId: number | undefined = undefined;
   description: string = '';
   unitOfMeasure: string = '';
-  isSite: boolean = false;
+  isPrd: boolean = false;
 
   ServiceOrderIds: number[] = [];
 
@@ -34,7 +34,7 @@ export class ConsumableFormValues {
       this.sapId = consumable.sapId;
       this.description = consumable.description;
       this.unitOfMeasure = consumable.unitOfMeasure;
-      this.isSite = consumable.isSite;
+      this.isPrd = consumable.isPrd;
       this.ServiceOrderIds = consumable.ServiceOrderIds;
     }
   }

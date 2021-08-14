@@ -54,6 +54,23 @@ export default class OrderStore {
     }
   };
 
+  loadCurrentUsersOrders = async () => {
+    this.isLoading = true;
+
+    try {
+      const result = await agent.OrderRequests.listCurrentUsersOrders();
+
+      result.forEach((orderListItem) => {
+        this.orders.push(orderListItem);
+      });
+
+      this.isLoading = false;
+    } catch (error) {
+      console.log(error);
+      this.isLoading = false;
+    }
+  };
+
   createOrder = async (order: OrderFormValues) => {
     this.isLoading = true;
 

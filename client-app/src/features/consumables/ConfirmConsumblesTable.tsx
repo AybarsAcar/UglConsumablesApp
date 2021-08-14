@@ -28,6 +28,8 @@ function ConfirmConsumablesTable() {
             <Table.HeaderCell>Sap Id</Table.HeaderCell>
             <Table.HeaderCell>Part Description</Table.HeaderCell>
             <Table.HeaderCell>Quantity</Table.HeaderCell>
+            <Table.HeaderCell>Unit of Measure</Table.HeaderCell>
+            <Table.HeaderCell>PRD</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
@@ -37,6 +39,8 @@ function ConfirmConsumablesTable() {
               <Table.Cell>{orderItem.sapId}</Table.Cell>
               <Table.Cell>{orderItem.description}</Table.Cell>
               <Table.Cell>{orderItem.quantity}</Table.Cell>
+              <Table.Cell>{orderItem.unitOfMeasure}</Table.Cell>
+              <Table.Cell>{orderItem.isPrd ? 'PRD item' : 'B01'}</Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>

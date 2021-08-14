@@ -15,6 +15,13 @@ namespace API.Interfaces
     public Task<List<Order>> GetOrdersAsync(int? serviceOrderId);
 
     /// <summary>
+    /// returns the orders by a specific user
+    /// </summary>
+    /// <param name="username"></param>
+    /// <returns></returns>
+    public Task<List<Order>> GetOrdersByUsernameAsync(string username);
+
+    /// <summary>
     /// returns the details of an order passed in an id
     /// </summary>
     /// <param name="id"></param>

@@ -31,6 +31,13 @@ namespace API.Data.Repositories
         .ToListAsync();
     }
 
+    public async Task<List<Order>> GetOrdersByUsernameAsync(string username)
+    {
+      return await _context.Orders.Include(o => o.OrderItems)
+        .Where(x => x.CreatedBy == username)
+        .ToListAsync();
+    }
+
     public async Task<Order> GetOrderByIdAsync(int id)
     {
       return await _context.Orders.Include(o => o.OrderItems).FirstOrDefaultAsync(o => o.Id == id);

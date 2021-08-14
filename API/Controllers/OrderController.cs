@@ -18,19 +18,32 @@ namespace API.Controllers
     private readonly IMapper _mapper;
     private readonly IUserAccessor _userAccessor;
     private readonly IEmailSender _emailSender;
+    private readonly ILogger<OrderController> _logger;
 
-    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor, IEmailSender emailSender)
+    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor, IEmailSender emailSender, ILogger<OrderController> logger)
     {
       _unit = unit;
       _mapper = mapper;
       _userAccessor = userAccessor;
       _emailSender = emailSender;
+      _logger = logger;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<OrderDto>>> GetOrders([FromQuery] int? serviceOrderId)
     {
       return Ok(_mapper.Map<List<OrderDto>>(await _unit.OrderRepository.GetOrdersAsync(serviceOrderId)));
+    }
+
+    [HttpGet("list")]
+    public async Task<ActionResult<List<OrderDto>>> GetUsersOrders()
+    {
+      // get the currently logged in user
+      var username = _userAccessor.GetUsername();
+      
+      _logger.LogInformation(username);
+      
+      return Ok(_mapper.Map<List<OrderDto>>(await _unit.OrderRepository.GetOrdersByUsernameAsync(username)));
     }
 
     [HttpGet("{id}")]

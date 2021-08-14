@@ -12,5 +12,7 @@ namespace API.Entities.Order
     public int SapId { get; set; }
     public string Description { get; set; }
     public int Quantity { get; set; }
+    public string UnitOfMeasure { get; set; }
+    public bool IsPrd { get; set; }
   }
 }

@@ -154,6 +154,7 @@ const AccountRequests = {
 
 const OrderRequests = {
   list: (serviceOrderId?: number) => requests.get<OrderListItem[]>(`/order`),
+  listCurrentUsersOrders: () => requests.get<OrderListItem[]>('/order/list'),
   details: (orderId: number) => requests.get<Order>(`/order/${orderId}`),
   create: (order: OrderFormValues) => requests.post<void>('/order', order),
 };

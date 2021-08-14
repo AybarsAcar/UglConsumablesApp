@@ -71,6 +71,7 @@ function ConsumableListItem({ consumable }: Props) {
           </Button>
         </ButtonGroup>
       </Table.Cell>
+      <Table.Cell>{consumable.unitOfMeasure}</Table.Cell>
     </Table.Row>
   );
 }

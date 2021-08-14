@@ -17,6 +17,7 @@ function ConsumableList() {
             <Table.HeaderCell>Sap Id</Table.HeaderCell>
             <Table.HeaderCell>Part Description</Table.HeaderCell>
             <Table.HeaderCell>Quantity</Table.HeaderCell>
+            <Table.HeaderCell>Unit of Measure</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 

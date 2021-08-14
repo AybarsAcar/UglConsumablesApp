@@ -88,6 +88,8 @@ function OrderDetailedPage() {
               <Table.HeaderCell>Sap Id</Table.HeaderCell>
               <Table.HeaderCell>Description</Table.HeaderCell>
               <Table.HeaderCell>Quantity</Table.HeaderCell>
+              <Table.HeaderCell>Unit of Measure</Table.HeaderCell>
+              <Table.HeaderCell>PRD</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
 
@@ -97,6 +99,8 @@ function OrderDetailedPage() {
                 <Table.Cell>{order.sapId}</Table.Cell>
                 <Table.Cell>{order.description}</Table.Cell>
                 <Table.Cell>{order.quantity}</Table.Cell>
+                <Table.Cell>{order.unitOfMeasure}</Table.Cell>
+                <Table.Cell>{order.isPrd ? 'PRD' : 'B01'}</Table.Cell>
               </Table.Row>
             ))}
           </Table.Body>

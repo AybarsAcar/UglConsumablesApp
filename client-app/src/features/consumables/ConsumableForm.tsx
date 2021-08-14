@@ -92,7 +92,7 @@ function ConsumableForm() {
               name="unitOfMeasure"
             />
 
-            <Checkbox name="isSite" toggle label="Site" />
+            <Checkbox name="isPrd" toggle label="PRD" />
 
             <Header content="Area of Works" sub color="teal" />
 
