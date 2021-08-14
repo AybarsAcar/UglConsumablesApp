@@ -5,6 +5,8 @@ using API.Entities.Order;
 using API.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
@@ -50,7 +52,6 @@ namespace API.Controllers
       {
         return BadRequest("Problem creating the order");
       }
-      
 
       // send the email to the admin
       var url = $"http://localhost:3000/admin/orders/{order.Id}";

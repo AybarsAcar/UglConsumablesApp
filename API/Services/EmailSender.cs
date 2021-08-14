@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Threading.Tasks;
 using API.Interfaces;
 using Microsoft.Extensions.Configuration;
@@ -15,22 +16,22 @@ namespace API.Services
       _config = config;
     }
 
-    public async Task SendEmailAsync(string userEmail, string emailSubject, string message)
+    public async Task SendEmailAsync(string userEmail, string emailSubject, string msg)
     {
       var client = new SendGridClient(_config["SendGrid:Key"]);
 
-      var msg = new SendGridMessage
+      var message = new SendGridMessage
       {
-        From = new EmailAddress("oaca0001@student.monash.edu", _config["SendGrid:User"]),
+        From = new EmailAddress("aybarsacar@gmail.com", _config["SendGrid:User"]),
         Subject = emailSubject,
-        PlainTextContent = message,
-        HtmlContent = message,
+        PlainTextContent = msg,
+        HtmlContent = msg,
       };
-      
-      msg.AddTo(new EmailAddress(userEmail));
-      msg.SetClickTracking(false, false);
 
-      await client.SendEmailAsync(msg);
+      message.AddTo(new EmailAddress(userEmail));
+      message.SetClickTracking(false, false);
+
+      await client.SendEmailAsync(message);
     }
   }
 }

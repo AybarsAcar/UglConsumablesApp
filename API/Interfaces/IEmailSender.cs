@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using SendGrid;
 
 namespace API.Interfaces
 {
@@ -12,8 +13,8 @@ namespace API.Interfaces
     /// </summary>
     /// <param name="userEmail"></param>
     /// <param name="emailSubject"></param>
-    /// <param name="message"></param>
+    /// <param name="msg"></param>
     /// <returns></returns>
-    public Task SendEmailAsync(string userEmail, string emailSubject, string message);
+    public Task SendEmailAsync(string userEmail, string emailSubject, string msg);
   }
 }

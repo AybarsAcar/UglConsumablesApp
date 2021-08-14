@@ -14,7 +14,7 @@ namespace API.Entities.Order
     public string Comment { get; set; }
 
     public string CreatedBy { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
     public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
     public bool IsClosed { get; set; } = false;
