@@ -7,9 +7,12 @@ import {
 import agent from '../api/agent';
 import { store } from './store';
 import { history } from '../..';
+import jwt from 'jsonwebtoken';
 
 export default class AccountStore {
   user: User | null = null;
+
+  isAdmin = false;
 
   constructor() {
     makeAutoObservable(this);
@@ -19,17 +22,29 @@ export default class AccountStore {
     return !!this.user;
   }
 
-  getUser = async () => {
+  private _getUser = async () => {
     try {
       const user = await agent.AccountRequests.current();
 
       store.commonStore.setToken(user.token);
 
-      runInAction(() => (this.user = user));
+      runInAction(() => {
+        this.user = user;
+
+        var decoded: any = jwt.decode(store.commonStore.token!);
+
+        this.isAdmin = decoded.role === 'Admin';
+      });
     } catch (error) {
       console.log(error);
     }
   };
+  public get getUser() {
+    return this._getUser;
+  }
+  public set getUser(value) {
+    this._getUser = value;
+  }
 
   login = async (creds: AccountLoginValues) => {
     try {
@@ -40,7 +55,13 @@ export default class AccountStore {
       store.commonStore.setToken(user.token);
 
       // set the user in client side data
-      runInAction(() => (this.user = user));
+      runInAction(() => {
+        this.user = user;
+
+        var decoded: any = jwt.decode(store.commonStore.token!);
+
+        this.isAdmin = decoded.role === 'Admin';
+      });
 
       store.modalStore.closeModal();
 
@@ -60,7 +81,13 @@ export default class AccountStore {
       store.commonStore.setToken(user.token);
 
       // set the user in client side data
-      runInAction(() => (this.user = user));
+      runInAction(() => {
+        this.user = user;
+
+        var decoded: any = jwt.decode(store.commonStore.token!);
+
+        this.isAdmin = decoded.role === 'Admin';
+      });
 
       store.modalStore.closeModal();
 

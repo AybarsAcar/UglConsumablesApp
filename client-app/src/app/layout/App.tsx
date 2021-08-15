@@ -14,6 +14,7 @@ import areaOfWorkForm from '../../features/areaOfWorks/areaOfWorkForm';
 import OrderDashboard from '../../features/order-dashboard/OrderDashboard';
 import OrderDetailedPage from '../../features/order-dashboard/OrderDetailedPage';
 import UserOrders from '../../features/order-dashboard/UserOrders';
+import AdminRoute from './AdminRoute';
 
 function App() {
   // get the location so we can re-render the component as the route changes
@@ -43,6 +44,7 @@ function App() {
             <NavBar />
             <Container style={{ marginTop: '7em' }}>
               <Switch>
+                {/* USER ROUTES */}
                 <PrivateRoute
                   exact
                   path="/consumables"
@@ -51,41 +53,42 @@ function App() {
 
                 <PrivateRoute
                   exact
+                  path="/user/orders"
+                  component={UserOrders}
+                />
+
+                {/* ADMIN ROUTES */}
+                <AdminRoute
+                  exact
                   path="/create/consumable"
                   component={ConsumableForm}
                 />
 
-                <PrivateRoute
+                <AdminRoute
                   exact
                   path="/edit/consumable/:sapId"
                   component={ConsumableForm}
                 />
 
-                <PrivateRoute
+                <AdminRoute
                   exact
                   path="/create/areaOfWork"
                   component={areaOfWorkForm}
                 />
 
-                <PrivateRoute
+                <AdminRoute
                   exact
                   path="/edit/areaOfWork/:sapId"
                   component={areaOfWorkForm}
                 />
 
-                <PrivateRoute
+                <AdminRoute
                   exact
                   path="/admin/orders"
                   component={OrderDashboard}
                 />
 
-                <PrivateRoute
-                  exact
-                  path="/user/orders"
-                  component={UserOrders}
-                />
-
-                <PrivateRoute
+                <AdminRoute
                   exact
                   path="/admin/orders/:id"
                   component={OrderDetailedPage}

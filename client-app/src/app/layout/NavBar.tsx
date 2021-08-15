@@ -5,7 +5,7 @@ import { useStore } from '../stores/store';
 
 function NavBar() {
   const { accountStore } = useStore();
-  const { isLoggedIn } = accountStore;
+  const { isLoggedIn, isAdmin } = accountStore;
 
   return (
     <Menu inverted fixed="top">
@@ -23,38 +23,41 @@ function NavBar() {
               name="Order Consumables"
             />
             <Menu.Item as={NavLink} exact to="/user/orders" name="My Orders" />
-            <Menu.Item>
-              <Dropdown pointing="top left" text="Admin">
-                <Dropdown.Menu>
-                  <Dropdown.Item
-                    as={Link}
-                    to={`/admin/orders`}
-                    text="Orders Dashboard"
-                    icon="th list"
-                  />
-                  <Divider />
-                  <Dropdown.Item
-                    as={Link}
-                    to={`/create/areaOfWork`}
-                    text="Create an Area of Work"
-                    icon="industry"
-                  />
 
-                  <Dropdown.Item
-                    as={Link}
-                    to={`/create/consumable`}
-                    text="Create a Consumable"
-                    icon="dolly"
-                  />
+            {isAdmin && (
+              <Menu.Item>
+                <Dropdown pointing="top left" text="Admin">
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      as={Link}
+                      to={`/admin/orders`}
+                      text="Orders Dashboard"
+                      icon="th list"
+                    />
+                    <Divider />
+                    <Dropdown.Item
+                      as={Link}
+                      to={`/create/areaOfWork`}
+                      text="Create an Area of Work"
+                      icon="industry"
+                    />
 
-                  <Dropdown.Item
-                    onClick={accountStore.logout}
-                    text="Logout"
-                    icon="power"
-                  />
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Item>
+                    <Dropdown.Item
+                      as={Link}
+                      to={`/create/consumable`}
+                      text="Create a Consumable"
+                      icon="dolly"
+                    />
+
+                    <Dropdown.Item
+                      onClick={accountStore.logout}
+                      text="Logout"
+                      icon="power"
+                    />
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Item>
+            )}
           </>
         )}
       </Container>
