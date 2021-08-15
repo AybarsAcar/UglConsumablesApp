@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using API.Entities;
 using API.Entities.Account;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -14,23 +17,29 @@ namespace API.Services
   public class TokenService
   {
     private readonly IConfiguration _config;
+    private readonly UserManager<AppUser> _userManager;
 
-    public TokenService(IConfiguration config)
+    public TokenService(IConfiguration config, UserManager<AppUser> userManager)
     {
       _config = config;
+      _userManager = userManager;
     }
 
-    public string CreateToken(AppUser user)
+    public async Task<string> CreateToken(AppUser user)
     {
       // set the claims we want to track in our token
       var claims = new List<Claim>
       {
         new(ClaimTypes.Name, user.UserName),
-        new(ClaimTypes.NameIdentifier, user.Id),
+        new(ClaimTypes.NameIdentifier, user.Id.ToString()),
         new(ClaimTypes.Email, user.Email),
       };
 
       var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["TokenKey"]));
+
+      var roles = await _userManager.GetRolesAsync(user);
+
+      claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
       var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 

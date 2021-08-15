@@ -5,8 +5,6 @@ using API.Entities.Order;
 using API.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
@@ -18,15 +16,13 @@ namespace API.Controllers
     private readonly IMapper _mapper;
     private readonly IUserAccessor _userAccessor;
     private readonly IEmailSender _emailSender;
-    private readonly ILogger<OrderController> _logger;
 
-    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor, IEmailSender emailSender, ILogger<OrderController> logger)
+    public OrderController(IUnitOfWork unit, IMapper mapper, IUserAccessor userAccessor, IEmailSender emailSender)
     {
       _unit = unit;
       _mapper = mapper;
       _userAccessor = userAccessor;
       _emailSender = emailSender;
-      _logger = logger;
     }
 
     [HttpGet]
@@ -40,9 +36,7 @@ namespace API.Controllers
     {
       // get the currently logged in user
       var username = _userAccessor.GetUsername();
-      
-      _logger.LogInformation(username);
-      
+
       return Ok(_mapper.Map<List<OrderDto>>(await _unit.OrderRepository.GetOrdersByUsernameAsync(username)));
     }
 
@@ -70,7 +64,7 @@ namespace API.Controllers
       var url = $"http://localhost:3000/admin/orders/{order.Id}";
 
       var message =
-        $"<p>Please click the link below to verify your email address:</p><p><a href='{url}'>Click to verify email</a></p>";
+        $"<p>Please click the link below to process the orders:</p><p><a href='{url}'>Click to view the order</a></p>";
 
       // TODO: add admin role and dynamically get it
       var adminEmail = "aybars.dev@gmail.com";

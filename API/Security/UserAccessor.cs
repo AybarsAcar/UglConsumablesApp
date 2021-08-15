@@ -23,5 +23,10 @@ namespace API.Security
     {
       return _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.Name);
     }
+    
+    public string GetUserRole()
+    {
+      return _httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.Role);
+    }
   }
 }

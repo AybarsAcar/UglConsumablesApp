@@ -30,6 +30,20 @@ namespace API
           var context = services.GetRequiredService<DataContext>();
           await context.Database.MigrateAsync();
 
+          var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
+
+          var roles = new List<AppRole>
+          {
+            new AppRole { Name = "User" },
+            new AppRole { Name = "Admin" },
+            new AppRole { Name = "Moderator" }
+          };
+
+          foreach (var role in roles)
+          {
+            await roleManager.CreateAsync(role);
+          }
+
           // TODO: update the seed data - it is noisy
           // seed data
           // await Seed.SeedAsync(context, loggerFactory);

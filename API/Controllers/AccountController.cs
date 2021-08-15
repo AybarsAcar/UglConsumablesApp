@@ -1,9 +1,5 @@
-using System;
-using System.Diagnostics;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using API.DTOs.Account;
-using API.Entities;
 using API.Entities.Account;
 using API.Interfaces;
 using API.Services;
@@ -56,11 +52,25 @@ namespace API.Controllers
 
       var user = new AppUser
       {
-        UserName = registerDto.Username,
-        Email = registerDto.Email,
+        UserName = registerDto.Username.ToLower(),
+        Email = registerDto.Email.ToLower(),
       };
 
       var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+      // TODO: update to more sophisticated way
+      if (user.UserName == "aybarsacar")
+      {
+        var roleResult = await _userManager.AddToRoleAsync(user, "Admin");
+
+        if (!roleResult.Succeeded) return BadRequest(result.Errors);
+      }
+      else
+      {
+        var roleResult = await _userManager.AddToRoleAsync(user, "User");
+
+        if (!roleResult.Succeeded) return BadRequest(result.Errors);
+      }
 
       if (!result.Succeeded)
       {
@@ -71,7 +81,7 @@ namespace API.Controllers
       {
         Username = user.UserName,
         Email = user.Email,
-        Token = _tokenService.CreateToken(user),
+        Token = await _tokenService.CreateToken(user),
         Department = user?.Department
       };
     }
@@ -104,7 +114,7 @@ namespace API.Controllers
       {
         Username = user.UserName,
         Email = user.Email,
-        Token = _tokenService.CreateToken(user),
+        Token = await _tokenService.CreateToken(user),
         Department = user?.Department
       };
     }
@@ -116,20 +126,20 @@ namespace API.Controllers
     [HttpGet]
     public async Task<ActionResult<UserDto>> GetCurrentUser()
     {
-      var username =  _userAccessor.GetUsername();
+      var username = _userAccessor.GetUsername();
 
       if (username == null)
       {
         return Unauthorized();
       }
-      
+
       var user = await _userManager.Users.FirstOrDefaultAsync(x => x.UserName == username);
 
       return new UserDto
       {
         Username = user.UserName,
         Email = user.Email,
-        Token = _tokenService.CreateToken(user),
+        Token = await _tokenService.CreateToken(user),
         Department = user?.Department
       };
     }

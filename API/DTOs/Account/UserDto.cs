@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using API.Entities.Account;
+
 namespace API.DTOs.Account
 {
   public class UserDto

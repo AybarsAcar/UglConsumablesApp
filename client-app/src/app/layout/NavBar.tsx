@@ -22,7 +22,6 @@ function NavBar() {
               to="/consumables"
               name="Order Consumables"
             />
-            <Menu.Item as={NavLink} exact to="/errors" name="Errors" />
             <Menu.Item as={NavLink} exact to="/user/orders" name="My Orders" />
             <Menu.Item>
               <Dropdown pointing="top left" text="Admin">
