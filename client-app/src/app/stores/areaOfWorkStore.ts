@@ -46,6 +46,8 @@ export default class AreaOfWorkStore {
     } catch (error) {
       console.log(error);
       this.setIsLoadingInitial(false);
+    } finally {
+      this.setIsLoadingInitial(false);
     }
   };
 
@@ -71,6 +73,10 @@ export default class AreaOfWorkStore {
   createAreaOfWork = async (areaOfWork: AreaOfWorkFormValues) => {
     try {
       await agent.AreaOfWorkRequests.create(areaOfWork);
+
+      runInAction(() => {
+        // add it to the local registry
+      });
     } catch (error) {
       console.log(error);
     }

@@ -7,6 +7,7 @@ import {
   OrderItem,
   Order,
 } from '../models/order';
+import { store } from './store';
 
 export default class OrderStore {
   orders: OrderListItem[] = [];
@@ -100,6 +101,8 @@ export default class OrderStore {
         this.isLoading = false;
         this.orderToCreate = new OrderFormValues();
         this.orderItemsToAdd = new Map<number, OrderItem>();
+
+        store.tabStore.activeTabIndex = 1;
       });
 
       history.push('/');

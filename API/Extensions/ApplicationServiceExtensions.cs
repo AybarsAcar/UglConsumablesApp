@@ -27,9 +27,9 @@ namespace API.Extensions
             policy
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials()
+              // .AllowCredentials()
               .WithExposedHeaders("WWW-Authenticate", "Pagination")
-              .WithOrigins("http://localhost:3000");
+              .AllowAnyOrigin(); /* .WithOrigins("http://localhost:3000"); */
           });
       });
 
@@ -39,7 +39,7 @@ namespace API.Extensions
 
       // repositories
       services.AddScoped<IUnitOfWork, UnitOfWork>();
-      
+
       // email service
       services.AddScoped<IEmailSender, EmailSender>();
 

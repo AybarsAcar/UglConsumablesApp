@@ -17,26 +17,25 @@ function AreaOfWorkSelection() {
   return (
     <Container>
       <Item.Group>
-        {!areaOfWorkStore.isLoadingInitial &&
-          areaOfWorkStore.areaOfWorks.map((areaOfWork) => (
-            <Item key={areaOfWork.id}>
-              <Item.Content verticalAlign="middle">
-                <Item.Header
-                  as="a"
-                  onClick={() => {
-                    areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
-                    orderStore.orderToCreate.serviceOrderId =
-                      areaOfWork.serviceOrder;
-                    orderStore.orderToCreate.areaOfWorkDescription =
-                      areaOfWork.description;
+        {areaOfWorkStore.areaOfWorks.map((areaOfWork) => (
+          <Item key={areaOfWork.id}>
+            <Item.Content verticalAlign="middle">
+              <Item.Header
+                as="a"
+                onClick={() => {
+                  areaOfWorkStore.selectAreaOfWork(areaOfWork.serviceOrder);
+                  orderStore.orderToCreate.serviceOrderId =
+                    areaOfWork.serviceOrder;
+                  orderStore.orderToCreate.areaOfWorkDescription =
+                    areaOfWork.description;
 
-                    tabStore.setActiveTab(2);
-                  }}
-                  content={areaOfWork.description}
-                />
-              </Item.Content>
-            </Item>
-          ))}
+                  tabStore.setActiveTab(2);
+                }}
+                content={areaOfWork.description}
+              />
+            </Item.Content>
+          </Item>
+        ))}
       </Item.Group>
     </Container>
   );
